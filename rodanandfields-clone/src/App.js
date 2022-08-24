@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 
-import Navbar from './praveencompnents/Navbar';
+
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
