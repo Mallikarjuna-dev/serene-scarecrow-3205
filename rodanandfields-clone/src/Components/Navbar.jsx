@@ -8,7 +8,6 @@ import {
   Icon,
   List,
   ListItem,
-
   Grid,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -22,7 +21,7 @@ import { useRef } from "react";
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const hoverRef = useRef();
- 
+
   return (
     <Box>
       <Box
@@ -84,41 +83,35 @@ const Navbar = () => {
             marginTop={"25px"}
             fontSize={"11px"}
             fontWeight={"550"}
-           
             borderBottom={"5px solid skyblue"}
             paddingBottom={"15px"}
           >
             SHOP
-            <Box 
-            position={"absolute"}
-            top={"120px"}
-            left={"0px"}
-            display={"none"}
-            w={"100%"}
-            margin={"auto"}
-            h={"200px"}
-            backgroundColor={"blue"}
-            transition={"all 0.4s ease"}
-            padding={"20px"}
-            boxSizing={"border-box"}
-            justifyContent={"center"}
-            boxShadow={"0 0 5px #8888"}
-            
+            <Box
+              position={"absolute"}
+              top={"120px"}
+              left={"0px"}
+              display={"none"}
+              w={"100%"}
+              margin={"auto"}
+              h={"200px"}
+              backgroundColor={"blue"}
+              transition={"all 0.4s ease"}
+              padding={"20px"}
+              boxSizing={"border-box"}
+              justifyContent={"center"}
+              boxShadow={"0 0 5px #8888"}
             >
-                  <Box >
-
-                  </Box>
+              <Box></Box>
             </Box>
           </ListItem>
           <ListItem marginTop={"25px"} fontSize={"11px"} fontWeight={"550"}>
             BEST SELLERS
           </ListItem>
-          <ListItem marginTop={"25px"} fontSize={"11px"} fontWeight={"550"} 
-           >
+          <ListItem marginTop={"25px"} fontSize={"11px"} fontWeight={"550"}>
             FEATURED
           </ListItem>
-          <ListItem marginTop={"25px"} fontSize={"11px"} fontWeight={"550"} 
-            >
+          <ListItem marginTop={"25px"} fontSize={"11px"} fontWeight={"550"}>
             OUR STORY
           </ListItem>
           <ListItem marginTop={"25px"} fontSize={"11px"} fontWeight={"550"}>
@@ -132,7 +125,6 @@ const Navbar = () => {
           </ListItem>
         </List>
       </Box>
-    
     </Box>
   );
 };
