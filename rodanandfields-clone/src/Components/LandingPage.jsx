@@ -1,37 +1,44 @@
 import {
   Box,
-  Flex,
+  
   Heading,
   Image,
   Text,
   Button,
-  Grid,
-  List,
-  ListItem,
+ 
 } from "@chakra-ui/react";
 import React from "react";
 import Slider from "./Slider";
 import DrImage from "./Image/DrImage.png";
 import clinically from "./Image/Clinically.png";
 import Results from "./Image/Results.png";
+import eyeblinker from "./Image/eyeblinker.webp"
+import UpperNavbar from "./UpperNavbar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const LandingPage = () => {
   return (
     <Box margin={0} p={0}>
+      <UpperNavbar />
+      <Navbar />
       <Box
         width={"100%"}
         h={"550px"}
-        border={"1px solid red"}
+       
         display={"flex"}
-        backgroundImage={"url(`./Image/eyeblinker.webp`)"}
+        backgroundImage={`url(${eyeblinker})`}
+        bgPosition={"center"}
+        bgRepeat={"no-repeat"}
+        bgSize={"cover"}
       >
         <Box
           w={"36%"}
           h={"550px"}
-          border={"1px solid black"}
+         
           paddingLeft={"60px"}
           paddingTop={"30px"}
-          backgroundImage={"url(`./Image/results.png`)"}
+     
         >
           <Box width={"290px"}>
             {" "}
@@ -98,7 +105,6 @@ const LandingPage = () => {
       <Box
         w={"100%"}
         h={"450px"}
-        
         padding={"30px"}
         pt={"40px"}
         display={"flex"}
@@ -108,7 +114,6 @@ const LandingPage = () => {
         <Box
           width={"350px"}
           height={"350px"}
-          
           textAlign={"center"}
           backgroundColor={"white"}
         >
@@ -117,6 +122,7 @@ const LandingPage = () => {
             alt={"image not available"}
             w={"100%"}
             h={"48%"}
+            borderRadius={"5px"}
           ></Image>
           <Heading
             fontFamily={"'Nanum Myeongjo', serif"}
@@ -132,15 +138,8 @@ const LandingPage = () => {
           </Heading>
           <Box width={"90%"} ml={"20px"} mt={"12px"}>
             <Text fontSize={"15px"} fontWeight={"480"}>
-              Dr. Katie Rodan + Dr. Kathy Fields founded
-              <Text fontSize={"15px"} fontWeight={"480"}>
-                {" "}
-                R+F to give everyone access to life-
-              </Text>
-              <Text fontSize={"15px"} fontWeight={"480"}>
-                {" "}
-                changing skincare.
-              </Text>
+              Dr. Katie Rodan + Dr. Kathy Fields founded R+F to give everyone
+              access to life- changing skincare.
             </Text>
           </Box>
 
@@ -153,9 +152,14 @@ const LandingPage = () => {
             Meet Our Doctors
           </Text>
         </Box>
-        <Box width={"350px"} height={"350px"}  textAlign={"center"} backgroundColor={"white"}>
+        <Box
+          width={"350px"}
+          height={"350px"}
+          textAlign={"center"}
+          backgroundColor={"white"}
+        >
           <Image
-            src={DrImage}
+            src={clinically}
             alt={"image not available"}
             w={"100%"}
             h={"48%"}
@@ -170,13 +174,13 @@ const LandingPage = () => {
             letterSpacing={"1px"}
             maxWidth={"none"}
           >
-           Clinically Tested
+            Clinically Tested
           </Heading>
           <Box width={"90%"} ml={"20px"} mt={"12px"}>
             <Text fontSize={"15px"} fontWeight={"480"}>
-            Our innovative formulas are tested in our lab and designed to work together to deliver real results.
-              </Text>
-            
+              Our innovative formulas are tested in our lab and designed to work
+              together to deliver real results.
+            </Text>
           </Box>
 
           <Text
@@ -188,12 +192,18 @@ const LandingPage = () => {
             Discover Multi-Med Therapy
           </Text>
         </Box>
-        <Box width={"350px"} height={"350px"}   textAlign={"center"} backgroundColor={"white"}>
+        <Box
+          width={"350px"}
+          height={"350px"}
+          textAlign={"center"}
+          backgroundColor={"white"}
+        >
           <Image
-            src={DrImage}
+            src={Results}
             alt={"image not available"}
             w={"100%"}
             h={"48%"}
+            borderRadius={"10px"}
           ></Image>
           <Heading
             fontFamily={"'Nanum Myeongjo', serif"}
@@ -205,12 +215,12 @@ const LandingPage = () => {
             letterSpacing={"1px"}
             maxWidth={"none"}
           >
-           Results Guaranteed
+            Results Guaranteed
           </Heading>
           <Box width={"90%"} ml={"20px"} mt={"12px"}>
             <Text fontSize={"15px"} fontWeight={"480"}>
-            See and feel the best skin of your life within 60 days or your money back. Even on empty bottles.
-              
+              See and feel the best skin of your life within 60 days or your
+              money back. Even on empty bottles.
             </Text>
           </Box>
 
@@ -220,7 +230,7 @@ const LandingPage = () => {
             fontWeight={"550"}
             textDecoration={"underline"}
           >
-          Our Money-Back Guarantee
+            Our Money-Back Guarantee
           </Text>
         </Box>
       </Box>
@@ -282,6 +292,7 @@ const LandingPage = () => {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };
