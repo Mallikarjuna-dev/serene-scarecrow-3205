@@ -5,7 +5,7 @@ const initialState = {
   token: "",
   isLoading: false,
   isError: false,
-  userdata: [{ email: "admin", password: "admin" },]
+  userdata: [{ email: "admin", password: "admin" }]
 };
 
 const reducer = (oldState = initialState, action) => {
@@ -40,7 +40,7 @@ const reducer = (oldState = initialState, action) => {
       return {
         ...oldState,
         isLoading: false,
-        userdata: [...payload],
+        userdata: [...oldState.userdata, payload],
       };
     case types.SIGNUP_FAILURE:
       return {
