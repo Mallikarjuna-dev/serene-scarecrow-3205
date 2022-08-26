@@ -1,6 +1,7 @@
 import Footer from "./Components/Footer";
 import LandingPage from "./Components/LandingPage";
 import Navbar from "./Components/Navbar";
+import Perksprogram from "./Components/Perksprogram";
 import UpperNavbar from "./Components/UpperNavbar";
 
 function App() {
