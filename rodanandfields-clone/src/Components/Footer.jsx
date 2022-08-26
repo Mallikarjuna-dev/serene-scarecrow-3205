@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text ,Heading,Icon} from "@chakra-ui/react";
 import { Grid, GridItem } from "@chakra-ui/react";
-import { Link as routerLink } from "react-router-dom";
+
 import {BsTwitter} from "react-icons/bs"
 import {FaFacebookF,FaPinterestP} from "react-icons/fa"
 import {ImInstagram,ImYoutube} from "react-icons/im"
@@ -16,23 +16,23 @@ const Footer = () => {
         gap={4}
       >
         <GridItem  pl={"25px"} mt={"35px"}>
-          <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}><routerLink>ABOUT R+F</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}><routerLink>PRESS ROOM</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}><routerLink>COMPANY INFO</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>EXECUTIVE TEAM</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>CAREERS</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>R+F RECYCLING PROGRAM</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}><routerLink>BLOG</routerLink></Text>
+          <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}>ABOUT R+F</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>PRESS ROOM</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>COMPANY INFO</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> EXECUTIVE TEAM</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> CAREERS</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> R+F RECYCLING PROGRAM</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>BLOG</Text>
         </GridItem>
         <GridItem  pl={"30px"} mt={"35px"}>
-          <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}><routerLink>HELP</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}><routerLink>PRODUCT & HELP CENTER</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}><routerLink>SHIPPING</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>SATISFACTION GUARANTEE</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>PROMOTIONAL TERMS & CONDITIONS</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>R+F FAQS</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> <routerLink>KLARNA</routerLink></Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}><routerLink>SITE MAP</routerLink></Text>
+          <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}>HELP</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>PRODUCT & HELP CENTER</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>SHIPPING</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> SATISFACTION GUARANTEE</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> PROMOTIONAL TERMS & CONDITIONS</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> R+F FAQS</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> KLARNA</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>SITE MAP</Text>
         </GridItem>
         <GridItem colSpan={2} pt={"35px"} pl={"220px"} >
           <Box><Heading fontFamily={"'Nanum Myeongjo', serif"}
@@ -44,20 +44,20 @@ const Footer = () => {
               maxWidth={"none"}>Let’s Get Social</Heading>
               <Box mt={"28px"} display={"flex"} w={"380px"} h={"50px"}  justifyContent={"space-between"} paddingTop={"15px"}>
               <Box width={"50px"}>
-                <routerLink><Icon as={FaFacebookF} w={"18px"} h={"18px"}></Icon></routerLink>
+                <Icon as={FaFacebookF} w={"18px"} h={"18px"}></Icon>
                 </Box>
                 <Box width={"50px"}>
-                  <routerLink><Icon as={BsTwitter} w={"18px"} h={"18px"}></Icon></routerLink>
+                  <Icon as={BsTwitter} w={"18px"} h={"18px"}></Icon>
                 </Box>
                 
                 <Box width={"50px"}>
-                <routerLink><Icon as={ImInstagram} w={"18px"} h={"18px"}></Icon></routerLink>
+                <Icon as={ImInstagram} w={"18px"} h={"18px"}></Icon>
                 </Box>
                 <Box width={"50px"}>
-                <routerLink><Icon as={ImYoutube} w={"18px"} h={"18px"}></Icon></routerLink>
+               <Icon as={ImYoutube} w={"18px"} h={"18px"}></Icon>
                 </Box>
                 <Box width={"50px"}>
-                <routerLink><Icon as={FaPinterestP} w={"18px"} h={"18px"}></Icon></routerLink>
+                <Icon as={FaPinterestP} w={"18px"} h={"18px"}></Icon>
                 </Box>
               </Box>
               
