@@ -16,23 +16,23 @@ const Footer = () => {
         gap={4}
       >
         <GridItem  pl={"25px"} mt={"35px"}>
-          {/* <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}>ABOUT R+F</Text>
+          <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}>ABOUT R+F</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>PRESS ROOM</Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}<RouterLink>COMPANY INFO</Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> EXECUTIVE TEAM></Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>COMPANY INFO</Text>
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> EXECUTIVE TEAM</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> CAREERS</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> R+F RECYCLING PROGRAM</Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>BLOG</Text> */}
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>BLOG</Text>
         </GridItem>
         <GridItem  pl={"30px"} mt={"35px"}>
-          {/* <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}><RouterLink>HELP</RouterLink></Text>
+          <Text cursor={"pointer"} fontSize={"12px"} fontWeight={"600"}>HELP</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>PRODUCT & HELP CENTER</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>SHIPPING</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> SATISFACTION GUARANTEE</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> PROMOTIONAL TERMS & CONDITIONS</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> R+F FAQS</Text>
           <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}> KLARNA</Text>
-          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>SITE MAP</Text> */}
+          <Text cursor={"pointer"} fontSize={"11px"} mt={"18px"} fontWeight={"550"}>SITE MAP</Text>
         </GridItem>
         <GridItem colSpan={2} pt={"35px"} pl={"220px"} >
           <Box><Heading fontFamily={"'Nanum Myeongjo', serif"}
