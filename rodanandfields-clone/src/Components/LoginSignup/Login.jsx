@@ -27,7 +27,6 @@ const Login = () => {
     const logout = () => {
         setload(true)
         dispatch(login({}, false))
-
     }
     useEffect(() => {
 
