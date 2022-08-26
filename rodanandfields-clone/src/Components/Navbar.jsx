@@ -1,5 +1,4 @@
-
-import {Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React from "react";
 import "./Navbar.css";
 
@@ -9,79 +8,89 @@ const Navbar = () => {
       <ul className="ul">
         <li className="li">
           SHOP
-          <div className="mega-menu" id="first-mega" >
+          <div className="mega-menu" id="first-mega">
             <div className="innerCoated">
-            <div className="inner-mega-menu" >
-              <p> SHOP BY CATEGORY</p>
-              
-                {/* <RouterLink>Skincare Regimens</RouterLink> */}
-              
-              
-                {/* <RouterLink>Lash & Brow</RouterLink> */}
-            
-             
-            </div>
-            <div className="inner-mega-menu">
-               <Link to="/perksprogram">SHOP BY CONCERN</Link>
-              
-                
-              
-              
-                
-            
-              {/*<p>
-                <RouterLink>Dark Spots & Uneven Skin Tone</RouterLink>
-              </p>
-              <p>
-                {" "}
-                <RouterLink>Sensitivity & Visible Redness</RouterLink>
-              </p>
-              <p>
-                {" "}
-                <RouterLink>Dull & Tired Skin</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Dry Skin</RouterLink>
-              </p>
-              <p>
-                {" "}
-                <RouterLink>Teen Acne</RouterLink>
-              </p> */}
-            </div>
-            <div className="inner-mega-menu">
-              <p>SHOP BY PRODUCT LINE</p>
-              
-                {/* <RouterLink>Redefine</RouterLink> */}
-              
-              {/* <p>
-                <RouterLink>Reverse</RouterLink>
-              </p>
-              <p>
-                {" "}
-                <RouterLink>Unblemish</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Soothe</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Recharge</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Spotless</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Enhancements</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Pro Skincare Tools</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Essentials</RouterLink>
-              </p>
-              <p>
-                <RouterLink>All Product</RouterLink>
-              </p> */}
-            </div>
+              <div className="inner-mega-menu">
+                <p>SHOP BY CATEGORY</p>
+                <p>
+                  <Link to={"#"}>Skincare Regimens</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Lash & Brow</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Eye Creams & Treatments</Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link to={"#"}>Face Serums & Treatments</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Face Masks</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Moisturizers</Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link to={"#"}>Cleansers & Makeup Removers</Link>
+                </p>
+              </div>
+              <div className="inner-mega-menu">
+                <p>SHOP BY CONCERN</p>
+                <p>
+                  <Link to={"#"}>Dark Spots & Uneven Skin Tone</Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link to={"#"}>Sensitivity & Visible Redness</Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link to={"#"}>Dull & Tired Skin</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Dry Skin</Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link to={"#"}>Teen Acne</Link>
+                </p>
+              </div>
+              <div className="inner-mega-menu">
+                <p>SHOP BY PRODUCT LINE</p>
+                <p>
+                  <Link to={"#"}>Redefine</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Reverse</Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link to={"#"}>Unblemish</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Soothe</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Recharge</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Spotless</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Enhancements</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Pro Skincare Tools</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>Essentials</Link>
+                </p>
+                <p>
+                  <Link to={"#"}>All Product</Link>
+                </p>
+              </div>
             </div>
           </div>
         </li>
@@ -90,23 +99,23 @@ const Navbar = () => {
           FEATURED
           <div className="mega-menu">
             <div className="inner-mega-menu" id="feature-inner">
-              
-                {/* <RouterLink>Special Offers</RouterLink> */}
-              
-              {/* <p>
-                <RouterLink>Before and Afters</RouterLink>
+              <p>
+                <Link to={"#"}>Special Offers</Link>
               </p>
               <p>
-                <RouterLink>New Total RF Serum</RouterLink>
+                <Link to={"#"}>Before and Afters</Link>
               </p>
               <p>
-                {" "}
-                <RouterLink>Spotless for Teens</RouterLink>
+                <Link to={"#"}>New Total RF Serum</Link>
               </p>
               <p>
                 {" "}
-                <RouterLink>Self-Care Essential</RouterLink>
-              </p> */}
+                <Link to={"#"}>Spotless for Teens</Link>
+              </p>
+              <p>
+                {" "}
+                <Link to={"#"}>Self-Care Essential</Link>
+              </p>
             </div>
           </div>
         </li>
@@ -114,48 +123,30 @@ const Navbar = () => {
           OUR STORY
           <div className="mega-menu">
             <div className="inner-mega-menu">
-           
-
-
-
-
-           
-                {/* <RouterLink> R+F Difference</RouterLink> */}
-            
-              {/* <p>
-                <RouterLink>Explore Our Regimens</RouterLink>
+              <p>
+                <Link to={"#"}> R+F Difference</Link>
               </p>
               <p>
-                <RouterLink>Our Founders</RouterLink>
+                <Link to={"#"}>Explore Our Regimens</Link>
               </p>
               <p>
-                <RouterLink>Our Impact</RouterLink>
+                <Link to={"#"}>Our Founders</Link>
               </p>
               <p>
-                <RouterLink>Eye Creams & Treatments</RouterLink>
+                <Link to={"#"}>Our Impact</Link>
               </p>
-              <p>
-                {" "}
-                <RouterLink>Face Serums & Treatments</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Face Masks</RouterLink>
-              </p>
-              <p>
-                <RouterLink>Moisturizers</RouterLink>
-              </p>
-              <p>
-                {" "}
-                <RouterLink>Cleansers & Makeup Removers</RouterLink>
-              </p>
-              */}
-             
             </div>
           </div>
         </li>
-        <li className="li">PERKS PROGRAMS</li>
-        <li className="li">BECOME A CONSULTANT</li>
-        <li className="li">BLOG</li>
+        <li className="li">
+          <Link to={"/pc-perks"}>PERKS PROGRAMS</Link>
+        </li>
+        <li className="li">
+          <Link to={"/become-a-consultant"}>BECOME A CONSULTANT</Link>
+        </li>
+        <li className="li">
+          <Link to={"/blog"}>BLOG</Link>
+        </li>
       </ul>
       <hr />
     </div>
@@ -163,5 +154,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

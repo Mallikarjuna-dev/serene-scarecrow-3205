@@ -1,15 +1,14 @@
-
-import *as types from "./actionTypes";
+import * as types from "./actionTypes";
 const initialState = {
   isAuth: false,
   token: "",
   isLoading: false,
   isError: false,
-  userdata: [{ email: "admin", password: "admin" }]
+  userdata: [{ email: "admin", password: "admin" }],
 };
 
 const reducer = (oldState = initialState, action) => {
-  const { type, payload } = action
+  const { type, payload } = action;
   switch (type) {
     case types.LOGIN_REQUEST:
       return {

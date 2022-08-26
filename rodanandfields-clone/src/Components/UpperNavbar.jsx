@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import { Box, Text, Icon, Link, Image } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { BsPerson, BsBag } from "react-icons/bs";
 import rodanlogo from "./Image/rodan.png";
-import usaicon from "./Image/usaflag.png"
-import Login from './LoginSignup/Login';
+import usaicon from "./Image/usaflag.png";
+import Login from "./LoginSignup/Login";
 const UpperNavbar = () => {
   return (
     <Box
@@ -37,25 +37,19 @@ const UpperNavbar = () => {
           <Text fontSize={"14px"}>
             <Login />
           </Text>
-
         </Box>
         <Box>
           <Icon as={BsBag} w={"20px"} h={"20px"}></Icon>
         </Box>
         <Box display={"flex"} w={"75px"} justifyContent={"space-between"}>
-          <Image
-            src={usaicon}
-            w={"18px"}
-            h={"18px"}
-            marginTop={"4px"}
-          ></Image>
+          <Image src={usaicon} w={"18px"} h={"18px"} marginTop={"4px"}></Image>
           <Text fontSize={"14px"}>
             <Link>England</Link>
           </Text>
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default UpperNavbar
+export default UpperNavbar;
