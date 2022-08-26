@@ -16,6 +16,7 @@ import eyeblinker from "./Image/eyeblinker.webp"
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ProductSlider from "./ProductSlider";
 
 const LandingPage = () => {
   return (
@@ -84,24 +85,13 @@ const LandingPage = () => {
             </Button>
           </Box>
         </Box>
-        {/* <Box w={"64%"} h={"550px"} border={"1px solid green"}>
-         
-        </Box> */}
+        
       </Box>
       <Box textAlign={"right"}>
         {" "}
         <Text>see your best seller</Text>
       </Box>
-      {/* <Box w={"100%"} h={"550px"} border={"1px solid red"}>
-        <Grid 
-        templateRows={"repeat(1,1fr)"}
-        templateColumns={"repeat(auto,auto)"}
-        gridGap={"10px"}
-        justifyContent={"center"}
-        >
-            
-        </Grid>
-      </Box> */}
+      <ProductSlider />
       <Box
         w={"100%"}
         h={"450px"}

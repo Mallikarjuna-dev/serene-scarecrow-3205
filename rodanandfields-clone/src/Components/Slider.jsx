@@ -8,7 +8,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 
 // import "swiper/css/pagination";
-import "./styles.css";
+import "./Styles/styles.css";
 
 const Slider = () => {
   return (
