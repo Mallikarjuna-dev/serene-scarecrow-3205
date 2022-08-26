@@ -36,6 +36,7 @@ const login = (payload, cc) => (dispatch) => {
 
 
 const signup = (payload) => (dispatch) => {
+    console.log(payload)
     dispatch({ type: types.SIGNUP_REQUEST })
     if (payload) {
         dispatch({
