@@ -1,4 +1,3 @@
-
 import "swiper/css/bundle";
 import "./Components/Navbar.css";
 import MainRoutes from "./Pages/MainRoutes";

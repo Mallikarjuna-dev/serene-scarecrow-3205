@@ -1,18 +1,10 @@
-import {
-  Box,
-  
-  Heading,
-  Image,
-  Text,
-  Button,
- 
-} from "@chakra-ui/react";
+import { Box, Heading, Image, Text, Button } from "@chakra-ui/react";
 import React from "react";
 import Slider from "./Slider";
 import DrImage from "./Image/DrImage.png";
 import clinically from "./Image/Clinically.png";
 import Results from "./Image/Results.png";
-import eyeblinker from "./Image/eyeblinker.webp"
+import eyeblinker from "./Image/eyeblinker.webp";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -25,21 +17,13 @@ const LandingPage = () => {
       <Box
         width={"100%"}
         h={"550px"}
-       
         display={"flex"}
         backgroundImage={`url(${eyeblinker})`}
         bgPosition={"center"}
         bgRepeat={"no-repeat"}
         bgSize={"cover"}
       >
-        <Box
-          w={"36%"}
-          h={"550px"}
-         
-          paddingLeft={"60px"}
-          paddingTop={"30px"}
-     
-        >
+        <Box w={"36%"} h={"550px"} paddingLeft={"60px"} paddingTop={"30px"}>
           <Box width={"290px"}>
             {" "}
             <Heading
@@ -223,7 +207,6 @@ const LandingPage = () => {
               money back. Even on empty bottles.
             </Text>
           </Box>
-
           <Text
             fontSize={"15px"}
             mt={"15px"}
