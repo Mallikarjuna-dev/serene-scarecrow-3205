@@ -16,6 +16,7 @@ import {
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
 import { useNavigate } from "react-router-dom";
+import { AddToCart } from "./AddToCart";
 const ProductDetails = () => {
   const navigate = useNavigate();
   return (
@@ -78,7 +79,7 @@ const ProductDetails = () => {
               4 interest-free payments of $85.75 with Klarna. Learn More
             </Text>
           </Box>
-          <Button
+          {/* <Button
             onClick={() => {
               navigate("/cart");
             }}
@@ -91,7 +92,8 @@ const ProductDetails = () => {
             h={"70px"}
           >
             ADD TO BAG{" "}
-          </Button>
+          </Button> */}
+          <AddToCart/>
           <Text>60 Day Money Back Guarantee</Text>
           <Text> Don't love it? It's on us. Learn More</Text>
           <Accordion border={"none"} fontSize={"20px"} allowToggle>
