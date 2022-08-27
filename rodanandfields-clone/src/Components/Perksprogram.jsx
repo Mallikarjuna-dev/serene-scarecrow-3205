@@ -16,10 +16,15 @@ import {
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 // import { Link } from "react-router-dom";
 import React from "react";
+import Navbar from "./Navbar";
+import UpperNavbar from "./UpperNavbar";
+import Footer from "./Footer";
 
 const Perksprogram = () => {
   return (
     <>
+      <UpperNavbar />
+      <Navbar />
       <Container marginTop="35px" maxW="72%">
         <Box maxW="100%" textAlign="center">
           <Text
@@ -797,6 +802,7 @@ const Perksprogram = () => {
           </Accordion>
         </Box>
       </Container>
+      <Footer />
     </>
   );
 };

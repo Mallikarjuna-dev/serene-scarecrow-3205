@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Autoplay, Keyboard,Navigation } from "swiper";
+import { Autoplay, Keyboard, Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -28,12 +28,11 @@ const Slider = () => {
         slidesPerView={5}
         centeredSlides={false}
         slidesPerGroupSkip={4}
-        
         grabCursor={true}
         autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         keyboard={{
           enabled: true,
         }}
@@ -44,11 +43,11 @@ const Slider = () => {
           },
         }}
         // scrollbar={true}, Scrollbar
-        navigation={true} 
-      
-        modules={[Keyboard,Autoplay, Navigation]}
+        navigation={true}
+        modules={[Keyboard, Autoplay, Navigation]}
         className="mySwiper"
       >
+
 
        {products.length>0 && products.map((item)=>{
         return (
@@ -60,6 +59,8 @@ const Slider = () => {
         )
        })}
        
+
+        
       </Swiper>
     </>
   );
