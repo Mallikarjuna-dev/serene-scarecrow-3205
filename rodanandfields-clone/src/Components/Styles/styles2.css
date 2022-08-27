@@ -1,0 +1,83 @@
+.swiper {
+    width: 100%;
+    height: 530px;
+    padding-top: 20px;
+    
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 10px;
+   
+    height: 480px;
+    width:260px ;
+  }
+  
+  .swiper-slide div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    background-color: white;
+  }
+  .swiper-slide .unique{
+    background-color: #f7f4ef1e;
+    width: 67%;
+    
+  }
+  .swiper-slide .unique>p{
+   
+    font-family: 'Nanum Myeongjo', serif;
+    font-size:40px ;
+    font-weight:450 ;
+    color:#222222 ;
+    line-height: 1.2;
+    letter-spacing: 1px;
+
+
+             
+  }
+  .swiper-slide div>img{
+          width: 100%;
+          height: 43%;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .swiper-slide:first-child {
+      transition: transform 100ms;
+    }
+  
+    .swiper-slide:first-child img {
+      transition: box-shadow 500ms;
+    }
+  
+    .swiper-slide.swiper-slide-active:first-child {
+      transform: translateX(50%);
+      z-index: 2;
+    }
+  
+    .swiper-slide.swiper-slide-active:first-child img {
+      box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+    }
+  
+    .swiper-slide:nth-child(2) {
+      transition: transform 100ms;
+    }
+  
+    .swiper-slide.swiper-slide-next:nth-child(2) {
+      transform: translateX(55%);
+      z-index: 1;
+    }
+  
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
+      transform: translateX(-50%);
+    }
+  
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
+      transform: translateX(-55%);
+    }
+  }
