@@ -6,7 +6,7 @@ const initState = {
     error:false
 }
 
-export const CartReducer = (state = initState, { type, payload }) => { 
+export const reducer = (state = initState, { type, payload }) => { 
     switch (type) { 
         case ActionTypes.ADD_TO_CART_REQUEST:
             return {
