@@ -1,20 +1,10 @@
-import Footer from "./Components/Footer";
-import LandingPage from "./Components/LandingPage";
-import Signup from "./Components/LoginSignup/Signup";
-import Navbar from "./Components/Navbar";
-import Perksprogram from "./Components/Perksprogram";
-import Consultant from "./Components/Consultant";
-import UpperNavbar from "./Components/UpperNavbar";
-
+import "swiper/css/bundle";
+import "./Components/Navbar.css";
+import MainRoutes from "./Pages/MainRoutes";
 function App() {
   return (
     <div className="App">
-      <UpperNavbar />
-      <Navbar />
-      <Consultant />
-      {/* <LandingPage /> */}
-      <Footer />
-
+      <MainRoutes />
     </div>
   );
 }
