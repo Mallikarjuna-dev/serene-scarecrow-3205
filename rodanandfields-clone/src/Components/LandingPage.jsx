@@ -225,7 +225,7 @@ const LandingPage = () => {
         </Box>
       </Box>
       <Slider />
-      <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"}>
+      <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"} mt={"20px"}>
         <Box
           w={"78%"}
           h={"63%"}

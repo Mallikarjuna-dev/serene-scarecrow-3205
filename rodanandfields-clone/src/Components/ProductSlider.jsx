@@ -64,11 +64,12 @@ const ProductSlider = () => {
         return <SwiperSlide key={item.id}>
                 <div>
                     <img src={item.productimage} alt="image not available" />
-                    <p style={{fontSize:"18px", fontWeight:"500",marginLeft:"20px"}}>{item.title}</p>
-                    <p style={{fontSize:"14px", fontWeight:"400",marginLeft:"20px"}}>{item.offer}</p>
-                    <p>{item.retailprice}</p>
-                    <p>Retail Price</p>
-
+                    <p style={{fontSize:"16px", fontWeight:"500",marginLeft:"10px",marginTop:"10px"}}>{item.title}</p>
+                    <p style={{fontSize:"14px", fontWeight:"500",marginLeft:"10px", marginTop:"10px"}}>{item.offer}</p>
+                    <p style={{fontSize:"19px",fontWeight:"550",marginLeft:"10px" , marginTop:"10px"}}>{`$${item.retailprice}`}</p>
+                    <p style={{fontSize:"12px",fontWeight:"400",marginLeft:"10px"}}>Retail Price</p>
+                    <p style={{fontSize:"19px",fontWeight:"550",marginLeft:"10px" , marginTop:"10px"}}>★★★★★4.5</p>
+                    <button style={{borderRadius:"5px",fontWeight:"500",marginTop:"40px", border:"1px solid black",padding:"10px 110px 10px 110px ",marginLeft:"10px"}}>ADD TO BAG</button>
                 </div>
         </SwiperSlide>
       })}
