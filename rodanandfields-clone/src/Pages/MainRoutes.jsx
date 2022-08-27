@@ -4,6 +4,8 @@ import Blog from "../Components/Blog";
 import Consultant from "../Components/Consultant";
 import LandingPage from "../Components/LandingPage";
 import Perksprogram from "../Components/Perksprogram";
+import Checkoutpage from "./Checkoutpage";
+import PaymentPage from "./PaymentPage";
 const MainRoutes = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const MainRoutes = () => {
         <Route path="/pc-perks" element={<Perksprogram />} />
         <Route path="/become-a-consultant" element={<Consultant />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/checkout" element={<Checkoutpage />} />
       </Routes>
     </>
   );
