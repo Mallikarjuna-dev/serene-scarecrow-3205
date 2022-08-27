@@ -23,6 +23,7 @@ const ReviewAndCheckout = () => {
     dispatch(getFromCart());
   }, []);
   console.log("cart item", cartItems);
+  
   return (
     <Box>
       <Box>
