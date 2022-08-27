@@ -13,7 +13,7 @@ const Navbar = () => {
               <div className="inner-mega-menu">
                 <p>SHOP BY CATEGORY</p>
                 <p>
-                  <Link to={"#"}>Skincare Regimens</Link>
+                  <Link to={"/productpage"}>Skincare Regimens</Link>
                 </p>
                 <p>
                   <Link to={"#"}>Lash & Brow</Link>

@@ -14,7 +14,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import "font-awesome/css/font-awesome.min.css";
+// import "font-awesome/css/font-awesome.min.css";
 import { useNavigate } from "react-router-dom";
 import { AddToCart } from "./AddToCart";
 const ProductDetails = () => {

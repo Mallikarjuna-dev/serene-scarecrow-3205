@@ -8,12 +8,23 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 
 // import "swiper/css/pagination";
-import "./styles.css";
+import "./Styles/styles.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getProducts } from "../Redux/AppReducer/action";
 
 const Slider = () => {
+  const products =useSelector((state)=>state.AppReducer.products)
+  const dispatch =useDispatch();
+  useEffect(()=>{
+    if(products.length===0){
+      dispatch(getProducts());
+    }
+  },[dispatch,products.length])
   return (
     <>
       <Swiper
+      id="swiper"
         slidesPerView={5}
         centeredSlides={false}
         slidesPerGroupSkip={4}
@@ -36,69 +47,20 @@ const Slider = () => {
         modules={[Keyboard, Autoplay, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-001.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-002.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-003.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-004.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-005.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-006.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-007.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-008.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://cdn.magloft.com/github/swiper/images/page-009.jpg"
-            width={"200px"}
-            height={"200px"}
-          />
-        </SwiperSlide>
+
+
+       {products.length>0 && products.map((item)=>{
+        return (
+            <SwiperSlide key={item.id} id={"swiperslider"}>
+                      <div>
+                        <img src={item.productimage} alt="image not available" />
+                      </div>
+            </SwiperSlide>
+        )
+       })}
+       
+
+        
       </Swiper>
     </>
   );

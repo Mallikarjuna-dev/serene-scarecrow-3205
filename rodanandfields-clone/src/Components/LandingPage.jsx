@@ -8,6 +8,8 @@ import eyeblinker from "./Image/eyeblinker.webp";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ProductSlider from "./ProductSlider";
+import DermDesigned from "./DermDesigned";
 
 const LandingPage = () => {
   return (
@@ -68,24 +70,14 @@ const LandingPage = () => {
             </Button>
           </Box>
         </Box>
-        {/* <Box w={"64%"} h={"550px"} border={"1px solid green"}>
-         
-        </Box> */}
+        
       </Box>
       <Box textAlign={"right"}>
         {" "}
         <Text>see your best seller</Text>
       </Box>
-      {/* <Box w={"100%"} h={"550px"} border={"1px solid red"}>
-        <Grid 
-        templateRows={"repeat(1,1fr)"}
-        templateColumns={"repeat(auto,auto)"}
-        gridGap={"10px"}
-        justifyContent={"center"}
-        >
-            
-        </Grid>
-      </Box> */}
+      <ProductSlider />
+      <DermDesigned />
       <Box
         w={"100%"}
         h={"450px"}
@@ -217,8 +209,11 @@ const LandingPage = () => {
           </Text>
         </Box>
       </Box>
+      <Box w={"100%"} h={"50px"}>
+          <Text fontSize={"18px"} fontWeight={"500"} ml={"10px"} mt={"15px"}>@Rodanandfields</Text>
+      </Box>
       <Slider />
-      <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"}>
+      <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"} mt={"20px"}>
         <Box
           w={"78%"}
           h={"63%"}
