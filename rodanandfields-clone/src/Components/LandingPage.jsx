@@ -9,6 +9,7 @@ import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ProductSlider from "./ProductSlider";
+import DermDesigned from "./DermDesigned";
 
 const LandingPage = () => {
   return (
@@ -76,6 +77,7 @@ const LandingPage = () => {
         <Text>see your best seller</Text>
       </Box>
       <ProductSlider />
+      <DermDesigned />
       <Box
         w={"100%"}
         h={"450px"}
@@ -206,6 +208,9 @@ const LandingPage = () => {
             Our Money-Back Guarantee
           </Text>
         </Box>
+      </Box>
+      <Box w={"100%"} h={"50px"}>
+          <Text fontSize={"18px"} fontWeight={"500"} ml={"10px"} mt={"15px"}>@Rodanandfields</Text>
       </Box>
       <Slider />
       <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"} mt={"20px"}>

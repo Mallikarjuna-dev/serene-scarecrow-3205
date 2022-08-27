@@ -1,0 +1,52 @@
+.dermcontainer{
+       
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f4f2;
+        text-align: center;
+        padding-top: 30px;
+}
+.h1{
+    font-size: 40px;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    font-family:'Nanum Myeongjo', serif ;
+
+}
+
+.gridContainer{
+    
+    width: 95%;
+    margin: auto;
+
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.griditem{
+    background-color: white;
+    height: 100%;
+}
+
+.shopall{
+    padding: 10px 100px 10px 100px;
+    border: 1px solid black;
+    margin-top: 65px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.griditem img{
+    border-radius: 5px;
+}
+.griditem p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+
+}
