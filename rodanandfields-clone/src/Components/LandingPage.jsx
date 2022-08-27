@@ -1,6 +1,6 @@
 import { Box, Heading, Image, Text, Button } from "@chakra-ui/react";
 import React from "react";
-import Slider from "./Slider";
+//import Slider from "./Slider";
 import DrImage from "./Image/DrImage.png";
 import clinically from "./Image/Clinically.png";
 import Results from "./Image/Results.png";
@@ -8,7 +8,7 @@ import eyeblinker from "./Image/eyeblinker.webp";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import ProductSlider from "./ProductSlider";
+//import ProductSlider from "./ProductSlider";
 
 const LandingPage = () => {
   return (
@@ -69,13 +69,13 @@ const LandingPage = () => {
             </Button>
           </Box>
         </Box>
-        
+
       </Box>
       <Box textAlign={"right"}>
         {" "}
         <Text>see your best seller</Text>
       </Box>
-      <ProductSlider />
+      {/* <ProductSlider /> */}
       <Box
         w={"100%"}
         h={"450px"}
@@ -207,7 +207,7 @@ const LandingPage = () => {
           </Text>
         </Box>
       </Box>
-      <Slider />
+      {/* <Slider /> */}
       <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"} mt={"20px"}>
         <Box
           w={"78%"}
