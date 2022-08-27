@@ -25,7 +25,7 @@ import { CartCounter } from "./CartCounter";
 import { Icon } from "@chakra-ui/icons";
 
 export function AddToCart() {
-  const cart = useSelector((store) => store.cart.cart);
+  const cart = useSelector((store) => store.CartReducer.cart);
   const dispatch = useDispatch();
   const navigate = useNavigate();
     const { isOpen, onOpen, onClose } = useDisclosure()
