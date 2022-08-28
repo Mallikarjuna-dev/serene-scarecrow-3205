@@ -90,7 +90,7 @@ const ReviewAndCheckout = () => {
                 <Text>SUBTOTAL</Text>
               </Box>
               <Box>
-                <Text>$87.00</Text>
+                <Text>$300.00</Text>
               </Box>
             </Flex>
           </Box>
@@ -113,7 +113,7 @@ const ReviewAndCheckout = () => {
               <Text>Estimated Total</Text>
             </Box>
             <Box>
-              <Text>$87.00</Text>
+              <Text>$325.00</Text>
             </Box>
           </Flex>
           <Box>
