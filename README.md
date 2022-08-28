@@ -16,7 +16,7 @@ Netlify link:-
 
 ### Home Page
 <p>It contains Navigation bar with different categories. Also footer which provides some information about the company and links to social media handles. Also it shows images of some latest products.</p>
-![Screenshot (1139)](../)
+![Screenshot (1139)](./rodanandfields-clone/public/readmeimage/Screenshot1139.png)
 
 
 ## Signup and Login 
