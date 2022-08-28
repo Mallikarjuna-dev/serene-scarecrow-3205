@@ -15,7 +15,7 @@ Netlify link:-
 
 ### Home Page
 <p>It contains Navigation bar with different categories. Also footer which provides some information about the company and links to social media handles. Also it shows images of some latest products.</p>
-![Screenshot (1139)](https://user-images.githubusercontent.com/76250603/187073994-2d1f392f-2e48-4f7f-9b28-2ec7862af6f0.png)
+![Screenshot (1139)](../)
 
 
 ## Signup and Login 
