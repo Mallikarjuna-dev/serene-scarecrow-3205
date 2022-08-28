@@ -45,7 +45,7 @@ const UpperNavbar = () => {
           <Login />
           <Icon as={BsPerson} w={"18px"} h={"18px"} marginTop={"2px"} />
         </Box>
-        <RouterLink to={ "/cart"}><Box>
+        <RouterLink to={ "/bagReview"}><Box>
           <Icon as={BsBag} w={"20px"} h={"20px"}></Icon> 
         </Box>
         </RouterLink>

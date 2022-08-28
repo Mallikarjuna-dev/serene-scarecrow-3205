@@ -74,12 +74,12 @@ export function AddToCart({ product}) {
             {
                 cart&&cart.map((e) => { 
                   return (
-                    <Box>
+                    <Box mb={"10px"}>
                     <Flex>
-                        <Box><Image src={e.productimage} objectFit="contain" border={ "2px solid red"} rounded="lg" boxSize={ "100px"}>
+                        <Box><Image src={e.productimage} objectFit="contain" rounded="lg" boxSize={ "100px"}>
 
                         </Image></Box>
-                        <Box>
+                        <Box pt={"20px"}>
                           <Text>{ e.title}</Text>
                       </Box>
                       </Flex>

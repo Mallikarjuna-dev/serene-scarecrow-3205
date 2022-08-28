@@ -27,7 +27,7 @@ const ReviewAndCheckout = () => {
     <Box>
       <Box>
         <Center>
-          <Heading as={"h2"}>REVIEW YOUR BAG</Heading>
+          <Heading as="h3" mb={ "20px"}>REVIEW YOUR BAG</Heading>
         </Center>
       </Box>
       <Box>
@@ -78,11 +78,12 @@ const ReviewAndCheckout = () => {
         })}
         
       </Box>
-      <Box w={"35%"} m={"auto"} h={"300px"} mb={ "20px"} border={ "1px solid grey"} borderRadius={"10px"}>
+      <Box pt={"20px"} pb={ "20px"} borderTop={ "1px solid grey"}>
+      <Box w={"35%"} m={"auto"} h={"300px"} mb={ "20px"} borderRadius={"10px"}>
         <Text fontSize={"25px"} fontStyle={"bold"}  mb={ "10px"}>
           ORDER SUMMARY
         </Text>
-        <Box fontSize={"20px"} mb={"20px"} border={"1px solid grey"} borderTop={ "none"}>
+        <Box fontSize={"20px"} mb={"20px"}  borderTop={ "none"}>
           <Box>
             <Flex justifyContent={"space-between"}>
               <Box>
@@ -106,7 +107,7 @@ const ReviewAndCheckout = () => {
               </Box>  
           </Box>
         </Box>
-        <Box fontSize={"20px"} mb={"20px"} border={"1px solid grey"} borderTop={ "none"}>
+        <Box fontSize={"20px"} mt={ "20px"} mb={"20px"}>
           <Flex justifyContent={"space-between"}>
             <Box>
               <Text>Estimated Total</Text>
@@ -175,7 +176,8 @@ const ReviewAndCheckout = () => {
           <Image  h={ "30px"} src={" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-amex.png"}></Image>
           <Image  h={ "30px"} src={"https://www.rodanandfields.com/en-us/_ui/images/card-icons/klarna-logo.png"}></Image>
           </Flex>
-      </Box>
+        </Box>
+        </Box>
     </Box>
   );
 };
