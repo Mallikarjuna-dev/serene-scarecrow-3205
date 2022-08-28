@@ -34,10 +34,10 @@ const ProductDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   useEffect(()=>{
-    if(products.length===0){
+    if(products?.length===0){
         dispatch(getProducts())
     }
-  }, [dispatch, products.length])
+  }, [dispatch, products?.length])
   useEffect(() => { 
     let temp = products?.find((e) => e.id === Number(id));
     if (temp) { 

@@ -2,10 +2,10 @@ import * as types from "./actionTypes";
 
 import axios from "axios";
 
-export const getProducts = () => (dispatch) => {
+export const getProducts = (url) => (dispatch) => {
   dispatch({ type: types.GET_PRODUCTS_DATA_REQUEST });
   return axios
-    .get("/best-sellers")
+    .get(`/${url}`)
     .then((r) => {
       dispatch({ type: types.GET_PRODUCTS_DATA_SUCCESS, payload: r.data });
     })
