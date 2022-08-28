@@ -69,6 +69,7 @@ Netlify link:-
 ## Feedback:
 
 If you want to suggest us anything or want to give us feedback then please connect us at:
+
 praveen7523017052@gmail.com
 mallikarjunaannigeri27@gmail.com
 ashsahu627@gmail.com
