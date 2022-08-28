@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../Components/Styles/DermDesigned.css";
 import { getProducts } from "../Redux/AppReducer/action";
+import { Link } from "react-router-dom";
 const DermDesigned = () => {
   const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ const DermDesigned = () => {
             }
           })}
       </div>
-      <button className="shopall">Shop All Products</button>
+      <Link to="/productpage"><button className="shopall">Shop All Products</button></Link>
     </div>
   );
 };

@@ -8,10 +8,14 @@ import Login from "./LoginSignup/Login";
 const UpperNavbar = () => {
   return (
     <Box
+    mt={"-30px"}
       h={"70px"}
+      w={"100%"}
       borderBottom="1px solid black"
       display={"flex"}
       justifyContent={"space-between"}
+      position={"fixed"}
+      backgroundColor={"white"}
     >
       <Box w={"200px"} marginTop={"20px"} marginLeft={"30px"}>
         <Link fontSize={"14px"}>FIND A CONSULTANT</Link>

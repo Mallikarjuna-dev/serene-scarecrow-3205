@@ -6,7 +6,7 @@ import { Mousewheel, Keyboard,Scrollbar } from "swiper";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
-
+import { Link } from "react-router-dom";
 
 // import "swiper/css/pagination";
 import "./Styles/styles2.css";
@@ -69,7 +69,7 @@ const ProductSlider = () => {
                     <p style={{fontSize:"19px",fontWeight:"550",marginLeft:"10px" , marginTop:"10px"}}>{`$${item.retailprice}`}</p>
                     <p style={{fontSize:"12px",fontWeight:"400",marginLeft:"10px"}}>Retail Price</p>
                     <p style={{fontSize:"19px",fontWeight:"550",marginLeft:"10px" , marginTop:"10px"}}>★★★★★4.5</p>
-                    <button style={{borderRadius:"5px",fontWeight:"500",marginTop:"40px", border:"1px solid black",padding:"10px 110px 10px 110px ",marginLeft:"10px"}}>ADD TO BAG</button>
+                    <Link to="/productpage"><button style={{borderRadius:"5px",fontWeight:"500",marginTop:"40px", border:"1px solid black",padding:"10px 110px 10px 110px ",marginLeft:"10px"}}>SHOP NOW</button></Link>
                 </div>
         </SwiperSlide>
       })}

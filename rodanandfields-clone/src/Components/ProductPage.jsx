@@ -5,6 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getProducts } from "../Redux/AppReducer/action";
+import Footer from "./Footer";
+import UpperNavbar from "./UpperNavbar";
+import Navbar from "./Navbar";
 
 const ProductPage = () => {
     const products =useSelector((state)=>state.AppReducer.products);
@@ -17,7 +20,11 @@ const ProductPage = () => {
     },[dispatch,products.length])
   return (
     <Box w={"100%"} backgroundColor={"#ffffff"} >
-      <Box w={"80%"}m={"auto"}>
+      <UpperNavbar />
+      <Navbar />
+      <Box w={"80%"}m={"auto"} 
+      mt={"60px"}
+      >
         <Box
           w={"100%"}
           height={"160px"}
@@ -25,7 +32,7 @@ const ProductPage = () => {
           m={"auto"}
           display={"flex"}
         >
-          <Box w={"50%"} h={"100%"}>
+          <Box w={"50%"} h={"100%"} >
             <Image
               src={prf}
               alt={"image naot available"}
@@ -81,6 +88,7 @@ const ProductPage = () => {
 
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };

@@ -19,6 +19,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { getProducts } from "../Redux/AppReducer/action";
 import { AddToCart } from "./AddToCart";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import UpperNavbar from "./UpperNavbar";
 const ProductDetails = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.AppReducer.products);
@@ -39,7 +42,9 @@ const ProductDetails = () => {
   console.log("products",products);
   console.log("product",singleProduct);
   return (
-    <Box p={"30px"} key={singleProduct.id}>
+    <Box mt={0} key={singleProduct.id}>
+      <UpperNavbar />
+      <Navbar />
       <Text>Home | Rodan + Fields Active Hydration Body Replenish</Text>
       <Flex fontSize={"1.3rem"} h={"700px"}>
         <Box>
@@ -96,20 +101,7 @@ const ProductDetails = () => {
               4 interest-free payments of $85.75 with Klarna. Learn More
             </Text>
           </Box>
-          {/* <Button
-            onClick={() => {
-              navigate("/cart");
-            }}
-            _hover={"red"}
-            bg={"#222222"}
-            color={"white"}
-            fontSize={"1.2rem"}
-            mb={"10px"}
-            w={"100%"}
-            h={"70px"}
-          >
-            ADD TO BAG{" "}
-          </Button> */}
+          
           <AddToCart product={singleProduct} />
           <Text>60 Day Money Back Guarantee</Text>
           <Text> Don't love it? It's on us. Learn More</Text>
@@ -412,6 +404,7 @@ const ProductDetails = () => {
           </Accordion>
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };
