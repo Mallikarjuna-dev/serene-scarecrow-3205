@@ -1,38 +1,42 @@
-.nav-div{
+.nav-div {
     width: 100%;
     height: 60px;
-    position: relative;
+
     top: 60px;
     left: 0px;
     background-color: white;
-   z-index: 1;
+    z-index: 1;
 }
-.ul{
+
+.ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-top: 22px;
 }
-.li{
+
+.li {
     font-size: 11px;
     font-weight: 550;
     padding-bottom: 10px;
 }
-.li:nth-child(1){
-        margin-left: 235px;
+
+.li:nth-child(1) {
+    margin-left: 235px;
 }
-.li:nth-child(7){
+
+.li:nth-child(7) {
     margin-right: 235px;
 }
 
 /* megamenu */
-.mega-menu{
+.mega-menu {
     position: absolute;
-    top: 30px;
-    left:0px;
+    top: 124px;
+    left: 0px;
     width: 100%;
     margin: auto;
-    height:auto;
+    height: auto;
     background-color: white;
     transition: all 0.4s ease;
     padding-top: 20px;
@@ -42,30 +46,33 @@
     justify-content: space-around;
     box-shadow: 0 0 5px #888;
     display: none;
-    
+
 }
-.nav-div .ul .li:hover .mega-menu{
+
+.nav-div .ul .li:hover .mega-menu {
     display: flex;
     z-index: 9;
 }
-.li:hover{
+
+.li:hover {
     border-bottom: 4px solid skyblue;
 }
-#feature-inner{
+
+#feature-inner {
     margin-right: 300px;
 }
 
-.inner-mega-menu p{
+.inner-mega-menu p {
     margin-top: 10px;
 }
-.inner-mega-menu p{
+
+.inner-mega-menu p {
     word-spacing: 0.7px;
 }
-.innerCoated{
+
+.innerCoated {
     display: flex;
     justify-content: space-around;
     width: 60%;
     margin-right: 400px;
 }
-
-

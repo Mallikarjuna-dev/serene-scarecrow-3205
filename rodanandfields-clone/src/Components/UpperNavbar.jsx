@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Box, Text, Icon, Link, Image } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { BsPerson, BsBag } from "react-icons/bs";
@@ -6,15 +6,30 @@ import rodanlogo from "./Image/rodan.png";
 import usaicon from "./Image/usaflag.png";
 import Login from "./LoginSignup/Login";
 const UpperNavbar = () => {
+  const [scroll, setscroll] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 60) {
+
+        setscroll(false)
+      }
+      else {
+        setscroll(true)
+      }
+    })
+  }, [])
+
   return (
     <Box
-    mt={"-30px"}
+      mt={scroll && "-30px"}
+      position={scroll ? "fixed" : "relative"}
+
       h={"70px"}
       w={"100%"}
       borderBottom="1px solid black"
       display={"flex"}
       justifyContent={"space-between"}
-      position={"fixed"}
+
       backgroundColor={"white"}
     >
       <Box w={"200px"} marginTop={"20px"} marginLeft={"30px"}>
@@ -37,9 +52,9 @@ const UpperNavbar = () => {
           <SearchIcon marginTop={"3px"} w={"15px"} h={"15px"}></SearchIcon>
         </Box>
         <Box display={"flex"}>
-          
+
           <Text fontSize={"14px"}>
-           
+
           </Text>
           <Login />
           <Icon as={BsPerson} w={"18px"} h={"18px"} marginTop={"2px"} />
