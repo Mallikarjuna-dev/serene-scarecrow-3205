@@ -144,9 +144,9 @@ const Navbar = () => {
         <li className="li">
           <Link to={"/become-a-consultant"}>BECOME A CONSULTANT</Link>
         </li>
-        <li className="li">
+        {/* <li className="li">
           <Link to={"/blog"}>BLOG</Link>
-        </li>
+        </li> */}
       </ul>
       <hr />
     </div>
