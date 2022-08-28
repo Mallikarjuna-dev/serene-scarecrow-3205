@@ -17,10 +17,14 @@ import {
 
 import { useDispatch, useSelector } from "react-redux";
 // import "font-awesome/css/font-awesome.min.css";
+
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { getProducts } from "../Redux/AppReducer/action";
 import { useState } from "react";
+
+import { AddToCart } from "./AddToCart";
+
 const ProductDetails = () => {
   const [currentProduct, setCurrentProduct] = useState();
   const { id } = useParams();
@@ -38,8 +42,8 @@ const ProductDetails = () => {
   useEffect(() => {
     let currentProd = products.find((item) => item.id === Number(id));
     currentProd && setCurrentProduct(currentProd);
-  }, [id, products,currentProduct]);
-  console.log(currentProduct)
+  }, [id, products,]);
+  console.log(currentProduct);
 
   return (
     <Box p={"30px"}>
@@ -55,9 +59,7 @@ const ProductDetails = () => {
               {currentProduct.header}
             </Text>
           </Box>
-          <Heading as={"h2"}>
-            {currentProduct.title}
-            </Heading>
+          <Heading as={"h2"}>{currentProduct.title}</Heading>
           <Flex mt={"15px"} fontSize={"20px"} gap={3}>
             <span style={{ color: "red" }}>
               <i class="fa fa-star"></i>
@@ -92,21 +94,10 @@ const ProductDetails = () => {
           >
             <Text>{}</Text>
           </Box>
-          <Button
-            onClick={() => {
-              navigate("/cart");
-            }}
-            _hover={"red"}
-            bg={"#222222"}
-            color={"white"}
-            fontSize={"1.2rem"}
-            mb={"10px"}
-            w={"100%"}
-            h={"70px"}
-          >
-            ADD TO BAG{" "}
-          </Button>
-          <Text>{currentProduct.guaranteed}</Text>
+
+          <AddToCart />
+          <Text>60 Day Money Back Guarantee</Text>
+
           <Text> Don't love it? It's on us. Learn More</Text>
           <Accordion border={"none"} fontSize={"20px"} allowToggle>
             <AccordionItem border={"none"} fontSize={"20px"}>
