@@ -86,12 +86,12 @@ const Login = () => {
                 onClose={onClose}
                 placement='top-end'
                 closeOnBlur={false}
-                zIndex={"9999"}
+
             >   {isAuth ? <Button variant="link" isLoading={load} onClick={logout} >Sign Out</Button> :
                 <PopoverTrigger>
 
 
-                    <Button onClick={() => setload(false)} variant={"link"} fontSize={"15px" } fontWeight={"400"}>Signin</Button>
+                    <Button onClick={() => setload(false)} variant={"link"} fontSize={"15px"} fontWeight={"400"}>Signin</Button>
                 </PopoverTrigger>}
                 <PopoverContent p={1}>
                     <FocusLock returnFocus persistentFocus={false}>
