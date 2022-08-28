@@ -79,18 +79,19 @@ const Login = () => {
     const [password, setpassword] = useState("")
     const { onOpen, onClose, isOpen } = useDisclosure()
     return (
-        <div>
+        <div >
             <Popover
                 isOpen={isOpen}
                 onOpen={onOpen}
                 onClose={onClose}
                 placement='top-end'
                 closeOnBlur={false}
+                zIndex={"9999"}
             >   {isAuth ? <Button variant="link" isLoading={load} onClick={logout} >Sign Out</Button> :
                 <PopoverTrigger>
 
 
-                    <Button onClick={() => setload(false)} variant='link' >Sing In</Button>
+                    <Button onClick={() => setload(false)} variant={"link"} fontSize={"15px" } fontWeight={"400"}>Signin</Button>
                 </PopoverTrigger>}
                 <PopoverContent p={1}>
                     <FocusLock returnFocus persistentFocus={false}>

@@ -13,6 +13,7 @@ import ProductDetails from "../Components/ProductDetails"
 
 import Checkoutpage from "./Checkoutpage";
 import PaymentPage from "./PaymentPage";
+import Login from "../Components/LoginSignup/Login";
 
 
 const MainRoutes = () => {
@@ -23,9 +24,9 @@ const MainRoutes = () => {
         <Route path="/pc-perks" element={<Perksprogram />} />
         <Route path="/become-a-consultant" element={<Consultant />} />
         <Route path="/blog" element={<Blog />} />
-
+        
         <Route path="/cart" element={<Cart/>} />
-        <Route path="/bagReview" element={<ReviewAndCheckout/>} />
+        <Route path="/bagreview" element={<ReviewAndCheckout/>} />
 
         <Route path="/productpage/:id" element={<ProductDetails />} />
         <Route path="/productpage" element={<ProductPage />}/>

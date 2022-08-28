@@ -10,6 +10,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ProductSlider from "./ProductSlider";
 import DermDesigned from "./DermDesigned";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -61,20 +62,20 @@ const LandingPage = () => {
             </Text>
           </Box>
           <Box mt={"30px"}>
-            <Button
+            <Link to ="/productpage"><Button
               padding={"12px 105px 12px 105px"}
               backgroundColor={"white"}
               border={"1px solid black"}
             >
               Shop Now
-            </Button>
+            </Button></Link>
           </Box>
         </Box>
         
       </Box>
       <Box textAlign={"right"}>
         {" "}
-        <Text>see your best seller</Text>
+        <Link to="/productpage"><Text>see your best seller</Text></Link>
       </Box>
       <ProductSlider />
       <DermDesigned />
@@ -258,7 +259,7 @@ const LandingPage = () => {
             </Text>
           </Box>
           <Box w={"35%"} h={"100px"} paddingTop={"25px"} paddingLeft={"100px"}>
-            <Button
+           <Link to="/become-a-consultant"> <Button
               backgroundColor={"white"}
               padding={"10px 25px 10px 25px"}
               letterSpacing={"0.5px"}
@@ -266,7 +267,7 @@ const LandingPage = () => {
               border={"1px solid black"}
             >
               FIND A CONSULTANT
-            </Button>
+            </Button></Link>
           </Box>
         </Box>
       </Box>

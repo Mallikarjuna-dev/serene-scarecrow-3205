@@ -15,42 +15,48 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+
+
+
+import  { useEffect,useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import "font-awesome/css/font-awesome.min.css";
 
 import { useNavigate, useParams } from "react-router-dom";
-import { useEffect } from "react";
 import { getProducts } from "../Redux/AppReducer/action";
-import { useState } from "react";
-
 import { AddToCart } from "./AddToCart";
-
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import UpperNavbar from "./UpperNavbar";
 const ProductDetails = () => {
-  const [currentProduct, setCurrentProduct] = useState();
-  const { id } = useParams();
-  const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
-
+  const products = useSelector((state) => state.AppReducer.products);
+  const[currentProduct,setCurrentProduct] = useState("");
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (products.length === 0) {
-      dispatch(getProducts());
+  const { id } = useParams();
+  useEffect(()=>{
+    if(products.length===0){
+        dispatch(getProducts())
     }
-  }, [dispatch, products.length]);
-
-  useEffect(() => {
-    let currentProd = products.find((item) => item.id === Number(id));
-    currentProd && setCurrentProduct(currentProd);
-  }, [id, products,]);
-  console.log(currentProduct);
-
+  }, [dispatch, products.length])
+  useEffect(() => { 
+    let temp = products?.find((e) => e.id === Number(id));
+    if (temp) { 
+      setCurrentProduct(temp);
+    }
+  }, [id, products])
+  console.log("products",products);
+ 
   return (
-    <Box p={"30px"}>
-      <Text></Text>
+    <Box mt={0} key={currentProduct.id}>
+      <UpperNavbar />
+      <Navbar />
+      <Text>Home | Rodan + Fields Active Hydration Body Replenish</Text>
       <Flex fontSize={"1.3rem"} h={"700px"}>
         <Box>
-          <Image src={currentProduct.productimage}></Image>
+          <Image
+            src={currentProduct.productimage }
+          ></Image>
+
         </Box>
         <Box p={"2px"} pt={"50px"}>
           <Box>
@@ -95,7 +101,11 @@ const ProductDetails = () => {
             <Text>{}</Text>
           </Box>
 
-          <AddToCart />
+          
+
+          
+          <AddToCart product={currentProduct} />
+
           <Text>60 Day Money Back Guarantee</Text>
 
           <Text> Don't love it? It's on us. Learn More</Text>
@@ -398,6 +408,7 @@ const ProductDetails = () => {
           </Accordion>
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };
