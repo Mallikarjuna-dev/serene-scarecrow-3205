@@ -21,7 +21,7 @@ Netlify link:-
 <p>It contains Navigation bar with different categories. Also footer which provides some information about the company and links to social media handles. Also it shows images of some latest products.</p>
 <img src="./rodanandfields-clone/public/readmeimage/Screenshot1139.png" />
 
-## Signup and Login
+## Signup and Login 
 
 <p>On this page, user can signup and after successfully signingup he can login.</p>
 <img src="./rodanandfields-clone/public/readmeimage/Screenshot1147.png" />
