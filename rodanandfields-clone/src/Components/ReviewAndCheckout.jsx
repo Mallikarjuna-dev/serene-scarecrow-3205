@@ -17,13 +17,12 @@ import { useNavigate } from "react-router-dom";
 // import { Checkout } from './Checkout';
 const ReviewAndCheckout = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector((store) => store.cart.cart);
-  const navigate = useNavigate();
-  useEffect(() => {
-    dispatch(getFromCart());
-  }, []);
-  console.log("cart item", cartItems);
-  
+  const cartItems = useSelector(store => store.CartReducer.cart)
+    const navigate = useNavigate();
+  useEffect(() => { 
+    dispatch(getFromCart())
+  },[])
+  console.log("cart item",cartItems)
   return (
     <Box>
       <Box>
@@ -106,6 +105,11 @@ const ReviewAndCheckout = () => {
               <Box>
                 <Text>Calculated At Checkout</Text>
               </Box>
+              <Box mt={ "20px"}>
+              <Button
+          onClick={()=>{
+            navigate("/checkout")
+          }} 
             </Flex>
           </Box>
         </Box>

@@ -68,7 +68,7 @@ const ProductPage = () => {
 
                     {products.length>0 && products.map((item)=>{
                         return (<GridItem key={item.id} height={"300px"} >
-                                 <img src={item.productimage} alt="image not available" width={"50%"} style={{margin:"auto"}} height={"150px"} />
+                                <Link to={ `/productpage/${item.id}`}>  <img src={item.productimage} alt="image not available" width={"50%"} style={{margin:"auto"}} height={"150px"} /></Link>
                     <p style={{fontSize:"13px", fontWeight:"500",marginLeft:"10px",marginTop:"3px"}}>{item.title}</p>
                     <p style={{fontSize:"12px", fontWeight:"500",marginLeft:"10px", marginTop:"3px"}}>{item.offer}</p>
                     <p style={{fontSize:"17px",fontWeight:"550",marginLeft:"10px" , marginTop:"3px"}}>{`$${item.retailprice}`}</p>
