@@ -5,6 +5,7 @@ import { BsPerson, BsBag } from "react-icons/bs";
 import rodanlogo from "./Image/rodan.png";
 import usaicon from "./Image/usaflag.png";
 import Login from "./LoginSignup/Login";
+import {Link as RouterLink} from "react-router-dom"
 const UpperNavbar = () => {
   return (
     <Box
@@ -44,9 +45,10 @@ const UpperNavbar = () => {
           <Login />
           <Icon as={BsPerson} w={"18px"} h={"18px"} marginTop={"2px"} />
         </Box>
-        <Box>
-          <Icon as={BsBag} w={"20px"} h={"20px"}></Icon>
+        <RouterLink to={ "/cart"}><Box>
+          <Icon as={BsBag} w={"20px"} h={"20px"}></Icon> 
         </Box>
+        </RouterLink>
         <Box display={"flex"} w={"75px"} justifyContent={"space-between"}>
           <Image src={usaicon} w={"18px"} h={"18px"} marginTop={"4px"}></Image>
           <Text fontSize={"14px"}>

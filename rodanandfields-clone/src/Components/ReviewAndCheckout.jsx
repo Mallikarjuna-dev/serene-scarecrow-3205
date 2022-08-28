@@ -36,16 +36,14 @@ const ReviewAndCheckout = () => {
             <Box
               key={e.id}
               m={"auto"}
-              mb={"10px"}
-              border={"3px solid blue"}
+              mb={"70px"}
               width={"500px"}
             >
               <Box
                 width={"500px"}
-                height={"350px"}
+                height={"270px"}
                 m={"auto"}
                 mb={"20px"}
-                border={"2px solid green"}
               >
                 <Stack flexDirection={{ base: "column", md: "row" }}>
                   <Box>
@@ -57,7 +55,7 @@ const ReviewAndCheckout = () => {
                       src={e.productimage}
                     />
                   </Box>
-                  <Box width={"250px"} height={"350px"} border="2px solid red">
+                  <Box width={"250px"} height={"350px"}>
                     <Text fontSize="2xl" as="h2">
                       {e.title}
                     </Text>
@@ -80,11 +78,11 @@ const ReviewAndCheckout = () => {
         })}
         
       </Box>
-      <Box w={"30%"} m={"auto"} h={"300px"} border={"1px solid blue"}>
-        <Text fontSize={"25px"} fontStyle={"bold"}>
+      <Box w={"35%"} m={"auto"} h={"300px"} mb={ "20px"} border={ "1px solid grey"} borderRadius={"10px"}>
+        <Text fontSize={"25px"} fontStyle={"bold"}  mb={ "10px"}>
           ORDER SUMMARY
         </Text>
-        <Box fontSize={"20px"} mb={"20px"} border={"1px solid grey"}>
+        <Box fontSize={"20px"} mb={"20px"} border={"1px solid grey"} borderTop={ "none"}>
           <Box>
             <Flex justifyContent={"space-between"}>
               <Box>
@@ -103,19 +101,12 @@ const ReviewAndCheckout = () => {
               <Box>
                 <Text>Calculated At Checkout</Text>
               </Box>
+              </Flex>
               <Box mt={"20px"}>
-                <Button
-                  onClick={() => {
-                    navigate("/checkout");
-                  }}
-                >
-                  {" "}
-                </Button>
-              </Box>
-            </Flex>
+              </Box>  
           </Box>
         </Box>
-        <Box fontSize={"20px"} mb={"20px"} border={"1px solid grey"}>
+        <Box fontSize={"20px"} mb={"20px"} border={"1px solid grey"} borderTop={ "none"}>
           <Flex justifyContent={"space-between"}>
             <Box>
               <Text>Estimated Total</Text>
@@ -132,24 +123,37 @@ const ReviewAndCheckout = () => {
         </Box>
         <Box>
           <Flex>
-            <Box pt={"10px"} pl={"10px"} w={"50%"} border={"1px solid red"}>
+            <Box pt={"10px"} pl={"10px"} w={"50%"}>
               <input
                 type="text"
                 placeholder="Enter Your Promo Code"
                 style={{ border: "none" }}
               />
             </Box>
-            <Box w={"50%"} border={"1px solid red"}>
-              <Button w={"100%"} border={"1px solid red"}>
+            <Box w={"50%"}  borderRadius={"10px"}>
+              <Button w={"100%"} bg={ "orange"} _hover>
                 APPLY
               </Button>
             </Box>
           </Flex>
-        </Box>
+          </Box>
         <Box mt={"20px"}>
           <Button
             onClick={() => {
-              navigate("");
+              navigate("/productpage");
+            }}
+            _hover={"red"}
+            border={ "1px solid black"}
+            fontSize={"1.2rem"}
+            mb={"10px"}
+            w={"100%"}
+            h={"70px"}
+          >
+          CONTINUE TO SHOPPING
+          </Button>
+          <Button
+            onClick={() => {
+              navigate("/checkout");
             }}
             _hover={"red"}
             bg={"#222222"}
@@ -162,6 +166,15 @@ const ReviewAndCheckout = () => {
             CHECKOUT
           </Button>
         </Box>
+        <Flex gap={"15px"} mb={ "20px"}>
+        <Text>We Accept</Text>
+          <Image h={ "30px"} src={" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-paypal.png"}></Image>
+        <Image  h={ "30px"} src={" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-visa.png"}></Image>
+        <Image  h={ "30px"} src={" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-mastercard.png"}></Image>
+        <Image  h={ "30px"} src={" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-discover.png"}></Image>
+          <Image  h={ "30px"} src={" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-amex.png"}></Image>
+          <Image  h={ "30px"} src={"https://www.rodanandfields.com/en-us/_ui/images/card-icons/klarna-logo.png"}></Image>
+          </Flex>
       </Box>
     </Box>
   );
