@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 // import { Checkout } from './Checkout';
 const ReviewAndCheckout = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector(store => store.cart.cart)
+  const cartItems = useSelector(store => store.CartReducer.cart)
     const navigate = useNavigate();
   useEffect(() => { 
     dispatch(getFromCart())
@@ -103,7 +103,7 @@ const ReviewAndCheckout = () => {
               <Box mt={ "20px"}>
               <Button
           onClick={()=>{
-            navigate("")
+            navigate("/checkout")
           }} 
             _hover={"red"}
             bg={"#222222"}

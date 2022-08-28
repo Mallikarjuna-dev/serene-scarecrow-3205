@@ -5,7 +5,7 @@ import { getFromCart } from '../Redux/CartReducer/action';
 import { Navigate } from 'react-router-dom';
 export const CartCounter = () => {
     const dispatch = useDispatch();
-    const cart = useSelector((store) => store.cart.cart)
+    const cart = useSelector((store) => store.CartReducer.cart)
     useEffect(() => {
         if(cart?.length===0){
             dispatch(getFromCart())

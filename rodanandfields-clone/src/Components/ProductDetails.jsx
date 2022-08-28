@@ -13,21 +13,38 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect,useState} from "react";
+import { useDispatch, useSelector } from "react-redux";
 // import "font-awesome/css/font-awesome.min.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { getProducts } from "../Redux/AppReducer/action";
 import { AddToCart } from "./AddToCart";
 const ProductDetails = () => {
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.AppReducer.products);
+  const[singleProduct,setSingleProduct] = useState("");
   const navigate = useNavigate();
+  const { id } = useParams();
+  useEffect(()=>{
+    if(products.length===0){
+        dispatch(getProducts())
+    }
+  }, [dispatch, products.length])
+  useEffect(() => { 
+    let temp = products?.find((e) => e.id === Number(id));
+    if (temp) { 
+      setSingleProduct(temp);
+    }
+  }, [id, products])
+  console.log("products",products);
+  console.log("product",singleProduct);
   return (
-    <Box p={"30px"}>
+    <Box p={"30px"} key={singleProduct.id}>
       <Text>Home | Rodan + Fields Active Hydration Body Replenish</Text>
       <Flex fontSize={"1.3rem"} h={"700px"}>
         <Box>
           <Image
-            src={
-              "https://www.rodanandfields.com/en-us/medias/HAAGRLP1-AAWA125-AATN125-AATT030-AAPM030-ENHLSH01.jpg?context=bWFzdGVyfGltYWdlc3wxMDE2NzJ8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2g5ZC8xMjM5NjczMDk3NDIzOC5qcGd8MjJkYTlmNDhmNjg3ZjU0NzRlOWQxNWZlNTcwZTM5OGZmYzUwNWU4NTNmZWVlZTNlMWIzNWQwNjFmZmUyYmMzYw"
-            }
+            src={singleProduct.productimage }
           ></Image>
         </Box>
         <Box p={"2px"} pt={"50px"}>
@@ -93,7 +110,7 @@ const ProductDetails = () => {
           >
             ADD TO BAG{" "}
           </Button> */}
-          <AddToCart/>
+          <AddToCart product={singleProduct} />
           <Text>60 Day Money Back Guarantee</Text>
           <Text> Don't love it? It's on us. Learn More</Text>
           <Accordion border={"none"} fontSize={"20px"} allowToggle>

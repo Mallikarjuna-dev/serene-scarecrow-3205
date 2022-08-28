@@ -52,7 +52,7 @@ export const deleteFromCartFailure = () => {
 export const addToCart = (product)=>(dispatch,getState) =>{ 
     const ActionRequest = addToCartRequest(); 
     dispatch(ActionRequest);
-    axios.post(" http://localhost:8080/cart", product).then(({ data}) => { 
+    axios.post("/cart", product).then(({ data}) => { 
         const SuccessAction = addToCartSuccess(data);
         dispatch(SuccessAction)
     })
@@ -65,7 +65,7 @@ export const addToCart = (product)=>(dispatch,getState) =>{
 export const getFromCart = ()=>(dispatch,getState) =>{ 
     const ActionRequest = getFromCartRequest(); 
     dispatch(ActionRequest);
-    axios.get(' http://localhost:8080/cart').then(({ data}) => { 
+    axios.get('/cart').then(({ data}) => { 
         console.log(data)
         const SuccessAction = getFromCartSuccess(data)
         dispatch(SuccessAction)
@@ -79,7 +79,7 @@ export const getFromCart = ()=>(dispatch,getState) =>{
 export const deleteFromCart = (id)=>(dispatch,getState) =>{ 
     const ActionRequest = deleteFromCartRequest(); 
     dispatch(ActionRequest);
-    axios.delete(` http://localhost:8080/cart/${id}`).then(({ data}) => { 
+    axios.delete(`/cart/${id}`).then(({ data}) => { 
         console.log(data)
         const SuccessAction = deleteFromCartSuccess(data)
         dispatch(SuccessAction)

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { getFromCart } from "../Redux/CartReducer/action";
+import { addToCart, getFromCart } from "../Redux/CartReducer/action";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import {
     Drawer,
@@ -24,8 +24,8 @@ import { useNavigate } from "react-router-dom";
 import { CartCounter } from "./CartCounter";
 import { Icon } from "@chakra-ui/icons";
 
-export function AddToCart() {
-  const cart = useSelector((store) => store.cart.cart);
+export function AddToCart({ product}) {
+  const cart = useSelector((store) => store.CartReducer.cart);
   const dispatch = useDispatch();
   const navigate = useNavigate();
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -45,8 +45,11 @@ export function AddToCart() {
           </Stack> */}
         </RadioGroup>
         <Button
-          onClick={onOpen} 
-            _hover={"red"}
+          onClick={() => {
+            onOpen()
+            dispatch(addToCart(product))
+          }}
+          _hover={"red"}
             bg={"#222222"}
             color={"white"}
             fontSize={"1.2rem"}
