@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionButton,
@@ -13,9 +14,13 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
-import React, { useEffect,useState} from "react";
+
+
+
+
+import  { useEffect,useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import "font-awesome/css/font-awesome.min.css";
+
 import { useNavigate, useParams } from "react-router-dom";
 import { getProducts } from "../Redux/AppReducer/action";
 import { AddToCart } from "./AddToCart";
@@ -25,7 +30,7 @@ import UpperNavbar from "./UpperNavbar";
 const ProductDetails = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.AppReducer.products);
-  const[singleProduct,setSingleProduct] = useState("");
+  const[currentProduct,setCurrentProduct] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
   useEffect(()=>{
@@ -36,30 +41,31 @@ const ProductDetails = () => {
   useEffect(() => { 
     let temp = products?.find((e) => e.id === Number(id));
     if (temp) { 
-      setSingleProduct(temp);
+      setCurrentProduct(temp);
     }
   }, [id, products])
   console.log("products",products);
-  console.log("product",singleProduct);
+ 
   return (
-    <Box mt={0} key={singleProduct.id}>
+    <Box mt={0} key={currentProduct.id}>
       <UpperNavbar />
       <Navbar />
       <Text>Home | Rodan + Fields Active Hydration Body Replenish</Text>
       <Flex fontSize={"1.3rem"} h={"700px"}>
         <Box>
           <Image
-            src={singleProduct.productimage }
+            src={currentProduct.productimage }
           ></Image>
+
         </Box>
         <Box p={"2px"} pt={"50px"}>
           <Box>
             {" "}
             <Text fontSize={"16px"} color={"#7c7f88"}>
-              BEST SELLER
+              {currentProduct.header}
             </Text>
           </Box>
-          <Heading as={"h2"}>REDEFINE + Lash Boost Special</Heading>
+          <Heading as={"h2"}>{currentProduct.title}</Heading>
           <Flex mt={"15px"} fontSize={"20px"} gap={3}>
             <span style={{ color: "red" }}>
               <i class="fa fa-star"></i>
@@ -69,22 +75,18 @@ const ProductDetails = () => {
               <i class="fa fa-star-half"></i>
             </span>
           </Flex>
-          <Text>
-            Ditch wrinkles + mascara. Our best selling anti-aging skincare
-            routine pairs with our famous conditioning eyelash serum for
-            younger-looking skin and eyes.
-          </Text>
+          <Text> {currentProduct.description}</Text>
           <Spacer h={"10px"}></Spacer>
           <Spacer></Spacer>
           <Text>Size: 200 mL / 6.76 Fl. Oz. U.S.</Text>
           <Text> Typical Use: Daily</Text>
           <Flex gap={"250px"}>
             <Box p={"20px"}>
-              <Text> $343 ($430 Value) </Text>
+              <Text>{currentProduct.retailprice} </Text>
               <Text> Retail Price</Text>
             </Box>
             <Box borderLeft={"2px solid black"} p={"20px"}>
-              <Text>$307</Text>
+              <Text>{`$${currentProduct.perksprice}`} </Text>
               <Text>PC Perks Price</Text>
             </Box>
           </Flex>
@@ -96,14 +98,16 @@ const ProductDetails = () => {
             p={"10px"}
             pb={"20px"}
           >
-            <Text>
-              {" "}
-              4 interest-free payments of $85.75 with Klarna. Learn More
-            </Text>
+            <Text>{}</Text>
           </Box>
+
           
-          <AddToCart product={singleProduct} />
+
+          
+          <AddToCart product={currentProduct} />
+
           <Text>60 Day Money Back Guarantee</Text>
+
           <Text> Don't love it? It's on us. Learn More</Text>
           <Accordion border={"none"} fontSize={"20px"} allowToggle>
             <AccordionItem border={"none"} fontSize={"20px"}>
