@@ -3,16 +3,17 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../Components/Styles/DermDesigned.css";
 import { getProducts } from "../Redux/AppReducer/action";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const DermDesigned = () => {
   const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
+  const location =useLocation();
 
   useEffect(() => {
-    if (products.length === 0) {
-      dispatch(getProducts());
+    if ( location || products?.length === 0) {
+      dispatch(getProducts("best-sellers"));
     }
-  }, [dispatch, products.length]);
+  }, [dispatch, products?.length,location]);
   return (
     <div className={"dermcontainer"}>
       <h1 className="h1">Derm-Designed Skincare for Every Concern</h1>

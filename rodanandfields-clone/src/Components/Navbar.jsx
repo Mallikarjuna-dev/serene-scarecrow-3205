@@ -13,13 +13,13 @@ const Navbar = () => {
               <div className="inner-mega-menu">
                 <p>SHOP BY CATEGORY</p>
                 <p>
-                  <Link to={"/productpage"}>Skincare Regimens</Link>
+                  <Link to={"/skincare"} >Skincare Regimens</Link>
                 </p>
                 <p>
-                  <Link to={"#"}>Lash & Brow</Link>
+                  <Link to={"/productpage"}>Lash & Brow</Link>
                 </p>
                 <p>
-                  <Link to={"#"}>Eye Creams & Treatments</Link>
+                  <Link to={"/eyecreams"}>Eye Creams & Treatments</Link>
                 </p>
                 <p>
                   {" "}
@@ -94,7 +94,7 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="li">BEST SELLERS</li>
+        <li className="li"><Link to={"/best-sellers"}>BEST SELLERS </Link></li>
         <li className="li">
           FEATURED
           <div className="mega-menu">

@@ -14,6 +14,9 @@ import ProductDetails from "../Components/ProductDetails"
 import Checkoutpage from "./Checkoutpage";
 import PaymentPage from "./PaymentPage";
 import Login from "../Components/LoginSignup/Login";
+import BestSeller from "../Components/BestSeller";
+import EyeCreams from "../Components/EyeCreams";
+import SkinCare from "../Components/SkinCare";
 
 
 const MainRoutes = () => {
@@ -27,6 +30,9 @@ const MainRoutes = () => {
         
         <Route path="/cart" element={<Cart/>} />
         <Route path="/bagreview" element={<ReviewAndCheckout/>} />
+        <Route path="/best-sellers" element={<BestSeller />}/>
+        <Route path="/eyecreams" element={<EyeCreams />} />
+        <Route path="/skincare" element={<SkinCare />} />
 
         <Route path="/productpage/:id" element={<ProductDetails />} />
         <Route path="/productpage" element={<ProductPage />}/>

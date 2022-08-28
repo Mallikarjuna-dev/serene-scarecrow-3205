@@ -17,10 +17,10 @@ const Slider = () => {
   const products =useSelector((state)=>state.AppReducer.products)
   const dispatch =useDispatch();
   useEffect(()=>{
-    if(products.length===0){
-      dispatch(getProducts());
+    if(products?.length===0){
+      dispatch(getProducts("best-sellers"));
     }
-  },[dispatch,products.length])
+  },[dispatch,products?.length])
   return (
     <>
       <Swiper

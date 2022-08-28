@@ -3,21 +3,21 @@ import { Box, Image, Heading, Text,Grid,GridItem } from "@chakra-ui/react";
 import prf from "../Components/Image/prf.webp";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { getProducts } from "../Redux/AppReducer/action";
 import Footer from "./Footer";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 
-const ProductPage = () => {
+const BestSeller = () => {
     const products =useSelector((state)=>state.AppReducer.products);
     const dispatch =useDispatch();
-
+    const location =useLocation();
     useEffect(()=>{
-        if(products?.length===0){
+        if(location || products?.length===0){
             dispatch(getProducts("best-sellers"))
         }
-    },[dispatch,products?.length])
+    },[dispatch,products?.length,location])
   return (
     <Box w={"100%"} backgroundColor={"#ffffff"} >
       <UpperNavbar />
@@ -91,6 +91,6 @@ const ProductPage = () => {
       <Footer />
     </Box>
   );
-};
+}
 
-export default ProductPage;
+export default BestSeller
