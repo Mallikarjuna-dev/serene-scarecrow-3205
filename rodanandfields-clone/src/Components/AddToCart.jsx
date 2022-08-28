@@ -23,7 +23,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { CartCounter } from "./CartCounter";
 import { Icon } from "@chakra-ui/icons";
-
 export function AddToCart({ product}) {
   const cart = useSelector((store) => store.CartReducer.cart);
   const dispatch = useDispatch();
