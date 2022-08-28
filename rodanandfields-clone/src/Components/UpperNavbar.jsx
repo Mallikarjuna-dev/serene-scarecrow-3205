@@ -37,10 +37,12 @@ const UpperNavbar = () => {
           <SearchIcon marginTop={"3px"} w={"15px"} h={"15px"}></SearchIcon>
         </Box>
         <Box display={"flex"}>
-          <Icon as={BsPerson} w={"18px"} h={"18px"} marginTop={"2px"} />
+          
           <Text fontSize={"14px"}>
-            <Login />
+           
           </Text>
+          <Login />
+          <Icon as={BsPerson} w={"18px"} h={"18px"} marginTop={"2px"} />
         </Box>
         <Box>
           <Icon as={BsBag} w={"20px"} h={"20px"}></Icon>
