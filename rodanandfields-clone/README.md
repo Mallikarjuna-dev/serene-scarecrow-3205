@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Rodan+Fields.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>R+F, is an American multi-level marketing company specializing in skincare products</p>
 
-## Available Scripts
+## About this project.
 
-In the project directory, you can run:
+<p>This project is built by us (4 team members) during construct week at Masai School.</p>
+Deployment link:- https://rodanandfields-clone-orcin.vercel.app/
 
-### `npm start`
+## Team Members.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Mr. Praveen Kumar.
+2. Mr. Mallikarjuna Annigeri.
+3. Mr. Ashwani Sahu.
+4. Mr. Satish.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pages and Features
 
-### `npm test`
+### Home Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>It contains Navigation bar with different categories. Also footer which provides some information about the company and links to social media handles. Also it shows images of some latest products.</p>
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1139.png" />
 
-### `npm run build`
+## Signup and Login 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>On this page, user can signup and after successfully signingup he can login.</p>
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1147.png" />
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1140.png" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Products Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>There are severeal categories of products pages such as Skincare Regimens, Lash & Brow, Eye Creams & Treatments, Face Serums & Treatments, Face Masks & etc. You can visit any of them according to your preference. One of the products page is dispalyed below.</p>
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1141.png" />
 
-### `npm run eject`
+### Product detail page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>On clicking any of the product it will redirect to the products page which shows detail information of the product along with button such as add to Bag.</p>
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1142.png" />
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1143.png" />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Bag & review Bag
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>This page shows the products which customer add to the bag from product page. From here customer can also remove it from the Bag.</p>
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1144.png" />
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1145.png" />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Cart and Checkout page
 
-## Learn More
+<p>On cart page customer can see the order summary and also customer can increase and decrease the quantity of the product.</p>
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1146.png" />
+<img src="./rodanandfields-clone/public/readmeimage/Screenshot1149.png" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tech Stack:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. HTML
+2. CSS
+3. JavaScript
+4. React
+5. Redux
+6. Chakra-Ui
+7. JSON-Server
 
-### Code Splitting
+## Tools Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+###### • Github for code collaboration.
 
-### Analyzing the Bundle Size
+###### • Slack and Zoom for communication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Feedback:
 
-### Making a Progressive Web App
+If you want to suggest us anything or want to give us feedback then please connect us at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+praveen7523017052@gmail.com
+mallikarjunaannigeri27@gmail.com
+ashsahu627@gmail.com
+kvksatish105@outlook.com
