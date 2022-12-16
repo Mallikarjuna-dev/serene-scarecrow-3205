@@ -18,7 +18,7 @@ import {
 
 
 
-import  { useEffect,useState} from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { useNavigate, useParams } from "react-router-dom";
@@ -30,22 +30,22 @@ import UpperNavbar from "./UpperNavbar";
 const ProductDetails = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.AppReducer.products);
-  const[currentProduct,setCurrentProduct] = useState("");
+  const [currentProduct, setCurrentProduct] = useState("");
   const navigate = useNavigate();
   const { id } = useParams();
-  useEffect(()=>{
-    if(products?.length===0){
-        dispatch(getProducts())
+  useEffect(() => {
+    if (products?.length === 0) {
+      dispatch(getProducts())
     }
   }, [dispatch, products?.length])
-  useEffect(() => { 
+  useEffect(() => {
     let temp = products?.find((e) => e.id === Number(id));
-    if (temp) { 
+    if (temp) {
       setCurrentProduct(temp);
     }
   }, [id, products])
-  console.log("products",products);
- 
+  console.log("products", products);
+
   return (
     <Box mt={0} key={currentProduct.id}>
       <UpperNavbar />
@@ -54,7 +54,7 @@ const ProductDetails = () => {
       <Flex fontSize={"1.3rem"} h={"700px"}>
         <Box>
           <Image
-            src={currentProduct.productimage }
+            src={currentProduct.productimage}
           ></Image>
 
         </Box>
@@ -98,12 +98,12 @@ const ProductDetails = () => {
             p={"10px"}
             pb={"20px"}
           >
-            <Text>{}</Text>
+            <Text>{ }</Text>
           </Box>
 
-          
 
-          
+
+
           <AddToCart product={currentProduct} />
 
           <Text>60 Day Money Back Guarantee</Text>
@@ -120,7 +120,7 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"}>
-                <Text>{ currentProduct.details}</Text>
+                <Text>{currentProduct.details}</Text>
               </AccordionPanel>
             </AccordionItem>
             <Spacer gap={1}></Spacer>
@@ -134,7 +134,7 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"}>
-                <Text>{ currentProduct.details}</Text>
+                <Text>{currentProduct.details}</Text>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
