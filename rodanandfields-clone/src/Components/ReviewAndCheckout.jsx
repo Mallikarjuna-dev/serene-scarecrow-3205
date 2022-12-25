@@ -18,11 +18,15 @@ import { useNavigate } from "react-router-dom";
 const ReviewAndCheckout = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.CartReducer.cart);
+  const total = cartItems.reduce((ac,element) => { 
+    return ac+Number(element.retailprice)
+  },0)
   const navigate = useNavigate();
   useEffect(() => {
     dispatch(getFromCart());
   }, []);
   console.log("cart item", cartItems);
+  console.log("total", total);
   return (
     <Box>
       <Box>
@@ -45,7 +49,7 @@ const ReviewAndCheckout = () => {
                 m={"auto"}
                 mb={"20px"}
               >
-                <Stack flexDirection={{ base: "column", md: "row" }}>
+                <Stack border={ "2px slid black"} flexDirection={{ base: "column", md: "row" }}>
                   <Box>
                     <Image
                       rounded={"lg"}
@@ -55,14 +59,17 @@ const ReviewAndCheckout = () => {
                       src={e.productimage}
                     />
                   </Box>
-                  <Box width={"250px"} height={"350px"}>
+
+                  <Box border={"1px solid green"} width={"250px"} height={"350px"}>
                     <Text fontSize="2xl" as="h2">
                       {e.title}
                     </Text>
-                    <Text overflow={"none"} fontSize="xl" as="h2">
+                    <Text mb={"2px"} overflow={"none"} fontSize="xl" as="h2">
                       {e.description}
                     </Text>
+                    <Text w={ "100px"}  color={"tomato"} fontSize="xl" ml={ "120px"}>Price:{ e.retailprice}</Text>  
                   </Box>
+
                 </Stack>
               </Box>
               <Button
@@ -90,7 +97,7 @@ const ReviewAndCheckout = () => {
                   <Text>SUBTOTAL</Text>
                 </Box>
                 <Box>
-                  <Text>$300.00</Text>
+                  <Text>${ total}</Text>
                 </Box>
               </Flex>
             </Box>
@@ -113,7 +120,7 @@ const ReviewAndCheckout = () => {
                 <Text>Estimated Total</Text>
               </Box>
               <Box>
-                <Text>$325.00</Text>
+                <Text>${ total+25}</Text>
               </Box>
             </Flex>
             <Box>
