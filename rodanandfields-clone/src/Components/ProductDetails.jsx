@@ -214,8 +214,8 @@ const ProductDetails = () => {
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
                <Text>
-                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
-                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+                  Powerful water magnets quench dryness by adding hydration to the skin's surface. The best ingredient to achieve this is Glycerin. Unfortunately,
+                  Glycerin is sticky by nature so most formulas contain only 1-3% Glycerin, making them less effective.
                </Text>
               </AccordionPanel>
             </AccordionItem>
@@ -231,8 +231,8 @@ const ProductDetails = () => {
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
               <Text>
-                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
-                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+                  The Active Hydration
+                  Body Replenish can be used with the Foaming Sunless Tan every day for visibly smoother softer skin.
                </Text>
               </AccordionPanel>
             </AccordionItem>
@@ -248,8 +248,8 @@ const ProductDetails = () => {
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
               <Text>
-                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
-                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+                  If someone wants to use both, (although unnecessary) there really is not a reason that they cannot.
+                  A suggestion is to apply the AHBR first then apply the Daily Body Moisturizer.
                </Text>
               </AccordionPanel>
             </AccordionItem>
@@ -265,8 +265,8 @@ const ProductDetails = () => {
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
               <Text>
-                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
-                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+                  The Active Hydration Body Replenish is designed for all skin types, and all skin types can benefit from added hydration. If you have any concerns of age or using Active Hydration Body Replenish with
+                  a medical condition, please talk with your healthcare provider to see if the product is appropriate.
                </Text>
               </AccordionPanel>
             </AccordionItem>
