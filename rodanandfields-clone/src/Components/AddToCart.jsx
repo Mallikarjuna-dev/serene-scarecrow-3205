@@ -65,7 +65,7 @@ export function AddToCart({ product}) {
               <Flex  gap={ "10px"}>
                 <Box>
             <CartCounter/>
-              <Icon onClick={() => { navigate("/cart") }} as={ AiOutlineShoppingCart} boxSize="2rem" m="7px"/>
+              <Icon onClick={() => { navigate("/bagreview") }} as={ AiOutlineShoppingCart} boxSize="2rem" m="7px"/>
             </Box>
                 <Box>MY BAG</Box>
               </Flex>

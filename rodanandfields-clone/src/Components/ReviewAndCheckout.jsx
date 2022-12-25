@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Center,
@@ -16,15 +16,25 @@ import { DeleteIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 // import { Checkout } from './Checkout';
 const ReviewAndCheckout = () => {
+  const [promo, setPromo] = useState('');
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.CartReducer.cart);
   const total = cartItems.reduce((ac,element) => { 
     return ac+Number(element.retailprice)
-  },0)
+  }, 0)
+  const [totals, setTotals] = useState(total);
   const navigate = useNavigate();
   useEffect(() => {
     dispatch(getFromCart());
   }, []);
+  const checkValidPromo = () => {
+    if (promo == "masai") {
+      console.log("promo code is not applied")
+      setTotals(totals - 50)
+    } else { 
+      console.log("promo code is not applied")
+    }
+  }
   console.log("cart item", cartItems);
   console.log("total", total);
   return (
@@ -37,19 +47,18 @@ const ReviewAndCheckout = () => {
       <Box>
         {cartItems.map((e) => {
           return (
-            <Box
+            <Box 
               key={e.id}
               m={"auto"}
               mb={"70px"}
               width={"500px"}
             >
-              <Box
+              
+                <Stack
                 width={"500px"}
                 height={"270px"}
                 m={"auto"}
-                mb={"20px"}
-              >
-                <Stack border={ "2px slid black"} flexDirection={{ base: "column", md: "row" }}>
+                flexDirection={{ base: "column", md: "row" }}>
                   <Box>
                     <Image
                       rounded={"lg"}
@@ -60,7 +69,7 @@ const ReviewAndCheckout = () => {
                     />
                   </Box>
 
-                  <Box border={"1px solid green"} width={"250px"} height={"350px"}>
+                <Box width={"250px"}>
                     <Text fontSize="2xl" as="h2">
                       {e.title}
                     </Text>
@@ -71,7 +80,7 @@ const ReviewAndCheckout = () => {
                   </Box>
 
                 </Stack>
-              </Box>
+             
               <Button
                 onClick={() => {
                   dispatch(deleteFromCart(e.id));
@@ -136,10 +145,11 @@ const ReviewAndCheckout = () => {
                   type="text"
                   placeholder="Enter Your Promo Code"
                   style={{ border: "none" }}
+                  onChange={(e) => { setPromo(e.target.value)}}
                 />
               </Box>
               <Box w={"50%"} borderRadius={"10px"}>
-                <Button w={"100%"} bg={"orange"} _hover>
+                <Button onClick={checkValidPromo} w={"100%"} bg={"orange"} _hover>
                   APPLY
                 </Button>
               </Box>
