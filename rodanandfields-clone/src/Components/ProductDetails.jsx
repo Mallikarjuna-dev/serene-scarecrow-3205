@@ -181,28 +181,9 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"}>
-                <ul>
-                  <li>
-                    {" "}
-                    <a href=""> Agile From 10,000 Feet 2m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Incremental or Iterative 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> A Lesson From Book Publishing 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Shipping Products Bit by Bit 4m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Finding the Agile That Works for You 4m</a>
-                  </li>
-                </ul>
+                <Text>
+                  Active Hydration Body Replenish is a fast-absorbing, ultra-hydrating daily body cream.
+                  </Text>
               </AccordionPanel>
             </AccordionItem>
             <Spacer gap={1}></Spacer>
@@ -217,28 +198,8 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
-                <ul>
-                  <li>
-                    {" "}
-                    <a href=""> Agile From 10,000 Feet 2m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Incremental or Iterative 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> A Lesson From Book Publishing 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Shipping Products Bit by Bit 4m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Finding the Agile That Works for You 4m</a>
-                  </li>
-                </ul>
+                <Text>Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws moisture
+                  from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.</Text>
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem border={"none"}>
@@ -252,28 +213,10 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
-                <ul>
-                  <li>
-                    {" "}
-                    <a href=""> Agile From 10,000 Feet 2m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Incremental or Iterative 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> A Lesson From Book Publishing 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Shipping Products Bit by Bit 4m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Finding the Agile That Works for You 4m</a>
-                  </li>
-                </ul>
+               <Text>
+                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
+                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+               </Text>
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem border={"none"}>
@@ -287,10 +230,10 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              <Text>
+                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
+                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+               </Text>
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem border={"none"}>
@@ -304,28 +247,10 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
-                <ul>
-                  <li>
-                    {" "}
-                    <a href=""> Agile From 10,000 Feet 2m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Incremental or Iterative 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> A Lesson From Book Publishing 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Shipping Products Bit by Bit 4m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Finding the Agile That Works for You 4m</a>
-                  </li>
-                </ul>
+              <Text>
+                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
+                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+               </Text>
               </AccordionPanel>
             </AccordionItem>
             <Spacer></Spacer>
@@ -339,28 +264,10 @@ const ProductDetails = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel fontSize={"20px"} pb={4}>
-                <ul>
-                  <li>
-                    {" "}
-                    <a href=""> Agile From 10,000 Feet 2m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Incremental or Iterative 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> A Lesson From Book Publishing 3m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Shipping Products Bit by Bit 4m</a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a href=""> Finding the Agile That Works for You 4m</a>
-                  </li>
-                </ul>
+              <Text>
+                  Unlike traditional body products, Active Hydration Body Replenish features R+F's proprietary 3D3P Molecular Matrix, which continuously draws
+                  moisture from the atmosphere and locks it onto your skin, restoring skin to its optimal hydration level.
+               </Text>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>

@@ -27,7 +27,7 @@ const ProductPage = () => {
           <Box w={"50%"} h={"100%"}>
             <Image
               src={prf}
-              alt={"image naot available"}
+              alt={"image not available"}
               w={"100%"}
               h={"100%"}
             ></Image>
