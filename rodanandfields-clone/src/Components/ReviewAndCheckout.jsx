@@ -149,6 +149,9 @@ const ReviewAndCheckout = () => {
             </Box>
           </Box>
           <Box>
+            <Box>
+              <Text color={"grey"}>enter "masai50" to get $50 discount</Text>
+            </Box>
             <Flex>
               <Box pt={"10px"} pl={"10px"} w={"50%"}>
                 <input
