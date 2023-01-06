@@ -20,6 +20,7 @@ const ReviewAndCheckout = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.CartReducer.cart);
   const [totals, setTotals] = useState(0);
+  const [disabled, setDisabled] = useState(false);
   useEffect(() => {
     const total = cartItems.reduce((ac, element) => {
       return ac + Number(element.retailprice)
@@ -32,13 +33,14 @@ const ReviewAndCheckout = () => {
     dispatch(getFromCart());
   }, []);
   const checkValidPromo = () => {
-    if (promo == "masai") {
-      console.log("congratulations! promo code is applied")
+    if (promo == "masai50") {
+      alert("congratulations! promo code is applied")
     console.log("total", totals);
     console.log("promo", promo);
       setTotals(totals - 50)
+      setDisabled(true)
     } else { 
-      console.log("sad ! promo code is not applied")
+      alert("sad ! promo code is not applied")
     }
   }
   console.log("cart item", cartItems);
@@ -157,7 +159,7 @@ const ReviewAndCheckout = () => {
                 />
               </Box>
               <Box w={"50%"} borderRadius={"10px"}>
-                <Button onClick={checkValidPromo} w={"100%"} bg={"orange"} _hover>
+                <Button disabled={ disabled} onClick={checkValidPromo} w={"100%"} bg={"orange"} _hover>
                   APPLY
                 </Button>
               </Box>

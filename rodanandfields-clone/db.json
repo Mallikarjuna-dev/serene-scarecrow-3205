@@ -482,18 +482,5 @@
       "details": "What it is: Save 20% when you bundle REDEFINE Regimen with our most popular age-fighting products! Target signs of aging on your face, lips + eye area to visibly improve every contour and reduce the appearance of lines + wrinkles. Why you need it: Different areas of the face benefit from particular anti-aging ingredients. Enhance results with this powerful lineup that visibly smooths, firms + lifts skin and empowers skin’s natural renewing processes."
     }
   ],
-  "cart": [
-    {
-      "id": 40,
-      "header": "BEST SELLER",
-      "title": "REVERSE Regimen",
-      "productimage": "https://www.rodanandfields.com/en-us/medias/HRVRGG01-RVWA125-RVTG125-RVTTG50-RVSS050.jpg?context=bWFzdGVyfGltYWdlc3w1ODQ3MXxpbWFnZS9qcGVnfGltYWdlcy9oMDEvaGE3LzEyNzcwMzQ0MDQyNTI2LmpwZ3w4ZWQ4ZmVkMzU2YmJhYmY3ZWU4ZTMwZTJhYTk4NGZjYjEzZDk2ZTNmNmM2YTlkMzc5NmFhNmM5YTE3OWQ0NmY2",
-      "description": "Bright + beautiful. Brightening ingredients like Salicylic Acid, Vitamin C and Retinol refine skin’s surface + tackle the look of fine lines + dark spots.",
-      "retailprice": "195",
-      "perksprice": "175",
-      "offer": "4 interest-free payments of $48.75 with Klarna.",
-      "guaranteed": "60 Day Money Back Guarantee",
-      "details": "What it is: A multi-tasking skincare routine that instantly brightens while visibly reducing discoloration + fine lines over time.     Why you need it: UV exposure can lead to sun damage, dark spots, and discoloration. Tackle and prevent visible dark marks, sunspots and unwanted freckles as you achieve more youthful-looking skin."
-    }
-  ]
+  "cart": []
 }
