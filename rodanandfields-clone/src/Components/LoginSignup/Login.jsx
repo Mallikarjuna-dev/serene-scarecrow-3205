@@ -102,7 +102,7 @@ const Login = () => {
                             User Id
                             <Input type={"email"} margin={"5px"} variant='outline' placeholder='Enter your email' value={email
                             } onChange={(e) => setemail(e.target.value)} />
-                            <div style={{ textAlign: "right" }} ><Link color={"black"} >Forgot Password</Link></div>
+                            <div style={{ textAlign: "right" }} ><Link color={"black"} >Forgot Password?</Link></div>
 
                             <h3> Password</h3>
 
