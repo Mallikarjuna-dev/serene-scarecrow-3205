@@ -37,7 +37,7 @@ const UpperNavbar = () => {
         <Link fontSize={"14px"}>FIND A CONSULTANT</Link>
       </Box>
       <Box w={"170px"} marginTop={"25px"}>
-        <Image src={rodanlogo} width={"160px"} h={"12px"}></Image>
+      <RouterLink to="/"><Image src={rodanlogo} width={"160px"} h={"12px"}></Image></RouterLink>
       </Box>
       <Box
         display={"flex"}
