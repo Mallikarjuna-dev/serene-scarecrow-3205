@@ -16,7 +16,7 @@ const Checkoutpage = () => {
   return (
     <div>
       <UpperNavbar />
-      <div style={{ border: "1px solid red",height:"800px" }}>
+      <div style={{height:"800px" }}>
         <div
           style={{
             width: "60%",

@@ -45,8 +45,10 @@ export function AddToCart({ product}) {
         </RadioGroup>
         <Button
           onClick={() => {
-            onOpen()
-            dispatch(addToCart(product))
+            dispatch(addToCart(product)).then(() => { 
+
+              onOpen()
+            })
           }}
           _hover={"red"}
             bg={"#222222"}
