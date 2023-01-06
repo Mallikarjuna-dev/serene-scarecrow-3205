@@ -80,6 +80,7 @@ const LandingPage = () => {
       <ProductSlider />
       <DermDesigned />
       <Box
+        boxSizing="border-box"
         w={"100%"}
         h={"450px"}
         padding={"30px"}
@@ -216,14 +217,15 @@ const LandingPage = () => {
       <Slider />
       <Box w={"100%"} h={"180px"} backgroundColor={"#d8e0e6a7"} pt={"5px"} mt={"20px"}>
         <Box
+           border={"1px solid green"}
           w={"78%"}
-          h={"63%"}
+          h={"72%"}
           m={"auto"}
           mt={"35px"}
           display={"flex"}
           backgroundColor={"white"}
         >
-          <Box w={"35%"} h={"100px"} paddingLeft={"90px"}>
+          <Box w={"35%"} h={"125px"} paddingLeft={"90px"}>
             <Text
               fontFamily={"'Nanum Myeongjo', serif"}
               fontSize={"30px"}

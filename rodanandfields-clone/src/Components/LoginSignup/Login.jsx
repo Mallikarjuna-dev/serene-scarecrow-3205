@@ -10,11 +10,13 @@ import {
     useDisclosure,
     Box,
     Link,
+    Text,
+    Flex,
 } from '@chakra-ui/react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../../Redux/AuthReducer/action'
-
+import { Link as RouterLink} from "react-router-dom"
 
 
 const Login = () => {
@@ -107,7 +109,9 @@ const Login = () => {
                             <Input type={"password"} margin={"5px"} variant='outline' placeholder='Enter your Password'
                                 value={password} onChange={(e) =>
                                     setpassword(e.target.value)} />
-
+                            <Flex gap="5px" fontSize={"14px"}>
+                            <Text>You dont have any acoount? please</Text><RouterLink to="/signup"><Text colorScheme={"blue.700"} textDecoration={"underline"}>signup</Text> </RouterLink>
+                            </Flex>
                             <Button isLoading={load} mt={"10px"} width={"100%"} colorScheme="gray" bg="black" color="white" onClick={() => {
                                 console.log(load, "load")
                                 logcheck({ email, password })
