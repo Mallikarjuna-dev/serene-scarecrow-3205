@@ -16,27 +16,29 @@ import { DeleteIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 // import { Checkout } from './Checkout';
 const ReviewAndCheckout = () => {
-  const [promo, setPromo] = useState('');
+  const [promo, setPromo] = useState("");
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.CartReducer.cart);
-  const total = cartItems.reduce((ac,element) => { 
-    return ac+Number(element.retailprice)
-  }, 0)
-  const [totals, setTotals] = useState(total);
+  const total = cartItems.reduce((ac, element) => {
+    return ac + Number(element.retailprice)
+  },0)
+  const [totals, setTotals] = useState(total+25);
   const navigate = useNavigate();
   useEffect(() => {
     dispatch(getFromCart());
   }, []);
   const checkValidPromo = () => {
     if (promo == "masai") {
-      console.log("promo code is not applied")
+      console.log("congratulations! promo code is applied")
+    console.log("total", totals);
+    console.log("promo", promo);
       setTotals(totals - 50)
     } else { 
-      console.log("promo code is not applied")
+      console.log("sad ! promo code is not applied")
     }
   }
   console.log("cart item", cartItems);
-  console.log("total", total);
+ 
   return (
     <Box>
       <Box>
@@ -129,7 +131,7 @@ const ReviewAndCheckout = () => {
                 <Text>Estimated Total</Text>
               </Box>
               <Box>
-                <Text>${ total+25}</Text>
+                <Text>${ totals+25}</Text>
               </Box>
             </Flex>
             <Box>
@@ -145,7 +147,7 @@ const ReviewAndCheckout = () => {
                   type="text"
                   placeholder="Enter Your Promo Code"
                   style={{ border: "none" }}
-                  onChange={(e) => { setPromo(e.target.value)}}
+                  onChange={(e) =>setPromo(e.target.value)}
                 />
               </Box>
               <Box w={"50%"} borderRadius={"10px"}>
