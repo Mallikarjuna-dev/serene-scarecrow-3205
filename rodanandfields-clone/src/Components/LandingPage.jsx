@@ -75,7 +75,14 @@ const LandingPage = () => {
       </Box>
       <Box textAlign={"right"}>
         {" "}
-        <Link to="/productpage"><Text>see your best seller</Text></Link>
+        <Link to="/productpage"><Button backgroundColor={"white"}
+              padding={"10px 25px 10px 25px"}
+              letterSpacing={"0.5px"}
+              fontWeight={"500"}
+              border={"1px solid black"}
+              fontSize={"14px"}
+              fontFamily={"ProximaNovaRegular,Arial,Sans-Serif"}
+              >see your best seller</Button></Link>
       </Box>
       <ProductSlider />
       <DermDesigned />
