@@ -28,20 +28,20 @@ const ProductSlider = () => {
     <>
 
 
-      <Swiper
+      <Swiper border={ "2px solid red"}
         direction={"horizontal"}
         slidesPerView={8}
         centeredSlides={false}
         slidesPerGroupSkip={2}
-        style={{ backgroundImage: `url(${slider})`, backgroundPosition: "center", backgroundRepeat: "repeat" }}
-
+        style={{ backgroundImage: `url(${slider})`, backgroundPosition: "center", backgroundRepeat: "no-repeat" }}
+  
         grabCursor={true}
         mousewheel={true}
         keyboard={{
           enabled: true,
         }}
         breakpoints={{
-          769: {
+          750: {
             slidesPerView: 4,
             slidesPerGroup: 1,
           },
@@ -52,7 +52,7 @@ const ProductSlider = () => {
         modules={[Mousewheel, Keyboard, Scrollbar]}
         className="mySwiper"
       >
-        <SwiperSlide >
+        <SwiperSlide border={ "2px solid red"} >
           <div className="unique">
             <p style={{ marginBottom: "50px" }}>
               Discover the life-changing products loved by millions.
@@ -61,7 +61,7 @@ const ProductSlider = () => {
           </div>
         </SwiperSlide>
         {products.length > 0 && products.map((item) => {
-          return <SwiperSlide key={item.id}>
+          return <SwiperSlide border={ "2px solid red"} key={item.id}>
             <div>
               <img src={item.productimage} alt="image not available" />
               <p style={{ fontSize: "16px", fontWeight: "500", marginLeft: "10px", marginTop: "10px" }}>{item.title}</p>

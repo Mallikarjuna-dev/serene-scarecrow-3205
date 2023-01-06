@@ -75,7 +75,7 @@ const ProductPage = () => {
             {products.length > 0 &&
               products.map((item) => {
                 return (
-                  <GridItem key={item.id} height={"300px"}>
+                  <GridItem border={"1px solid red"} key={item.id} height={"300px"}>
                     <Link to={`/productpage/${item.id}`}>
                       {" "}
                       <img

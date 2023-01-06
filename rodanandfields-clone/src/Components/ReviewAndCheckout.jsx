@@ -54,11 +54,13 @@ const ReviewAndCheckout = () => {
               m={"auto"}
               mb={"70px"}
               width={"500px"}
+              height="400px"
             >
               
-                <Stack
+              <Stack
+                overflow={ "hidden"}
                 width={"500px"}
-                height={"270px"}
+                height={"260px"}
                 m={"auto"}
                 flexDirection={{ base: "column", md: "row" }}>
                   <Box>
@@ -75,15 +77,15 @@ const ReviewAndCheckout = () => {
                     <Text fontSize="2xl" as="h2">
                       {e.title}
                     </Text>
-                    <Text mb={"2px"} overflow={"none"} fontSize="xl" as="h2">
+                  <Text mb={"2px"} overflow={"none"} fontSize="xl" as="h2">
                       {e.description}
                     </Text>
-                    <Text w={ "100px"}  color={"tomato"} fontSize="xl" ml={ "120px"}>Price:{ e.retailprice}</Text>  
                   </Box>
-
-                </Stack>
-             
-              <Button
+              </Stack>
+              <Flex flexDirection={"row-reverse"}>
+                <Text m={ "10px"} h={ "50px"} w={ "100px"}  color={"tomato"} fontSize="xl">Price:${ e.retailprice}</Text>  
+                  </Flex>
+              <Button h={ "50px"}
                 onClick={() => {
                   dispatch(deleteFromCart(e.id));
                 }}

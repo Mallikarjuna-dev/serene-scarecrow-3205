@@ -81,6 +81,10 @@ export function AddToCart({ product}) {
                         </Image></Box>
                         <Box pt={"20px"}>
                           <Text>{ e.title}</Text>
+                          <Flex>
+                          <Text>Price:</Text>
+                           <Text color={ "red"}>${ e.retailprice}</Text>
+                           </Flex>
                       </Box>
                       </Flex>
                     </Box>
