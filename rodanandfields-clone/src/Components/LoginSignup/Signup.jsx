@@ -1,4 +1,4 @@
-import { Alert, Button, Input, PinInput, PinInputField } from '@chakra-ui/react'
+import {Button, Heading, Input, PinInput, PinInputField } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { signup } from '../../Redux/AuthReducer/action'
@@ -30,11 +30,12 @@ const Signup = () => {
 
 
     return (
-        <div style={{ padding: "1rem 0.1rem", textAlign: "center", margin: "auto", }} >
+        <div style={{ padding: "1rem 0.1rem", textAlign: "center", margin: "auto", width: "40%" }} >
+            <Heading>Create an account</Heading>
             <form>
-                <Input value={email} onChange={(e) => setemail(e.target.value)} isRequired m={"0.5rem 0"} placeholder='email' />
-                <Input value={password} onChange={(e) => setpassword(e.target.value)} isRequired m={"0.5rem 0"} placeholder='password' />
-                <Input value={repass} onChange={(e) => setrepass(e.target.value)} isRequired m={"0.5rem 0"} placeholder='re enter password' />
+                <Input value={email} onChange={(e) => setemail(e.target.value)} isRequired m={"0.5rem 0"} placeholder='email address' />
+                <Input value={password} onChange={(e) => setpassword(e.target.value)} isRequired m={"0.5rem 0"} placeholder='enter your password' />
+                <Input value={repass} onChange={(e) => setrepass(e.target.value)} isRequired m={"0.5rem 0"} placeholder='re enter your password' />
                 Please Enter Your OTP<br></br>
                 <PinInput value={otp} onChange={(e) => setotp(e)} m={"0.5rem 0"} otp>
                     <PinInputField />

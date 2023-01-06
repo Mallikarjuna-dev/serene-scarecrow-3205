@@ -45,20 +45,20 @@ const UpperNavbar = () => {
         justifyContent={"space-between"}
         marginTop={"20px"}
         marginRight={"20px"}
+        alignItems="center"
       >
         <Box display={"flex"}>
+          <SearchIcon margin={"3px"} w={"15px"} h={"15px"}></SearchIcon>
           <Text fontSize={"14px"}>
             <Link>Search</Link>
           </Text>
-          <SearchIcon marginTop={"3px"} w={"15px"} h={"15px"}></SearchIcon>
         </Box>
-        <Box display={"flex"}>
+        <Box display={"flex"} alignItems="center">
 
+          <Icon as={BsPerson} w={"18px"} h={"18px"} margin={"2px"} />
           <Text fontSize={"14px"}>
-
-          </Text>
           <Login />
-          <Icon as={BsPerson} w={"18px"} h={"18px"} marginTop={"2px"} />
+            </Text>
         </Box>
         <RouterLink to={ "/bagReview"}><Box>
           <Icon as={BsBag} w={"20px"} h={"20px"}></Icon> 

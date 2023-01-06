@@ -16,6 +16,7 @@ import Login from "../Components/LoginSignup/Login";
 import BestSeller from "../Components/BestSeller";
 import EyeCreams from "../Components/EyeCreams";
 import SkinCare from "../Components/SkinCare";
+import Signup from "../Components/LoginSignup/Signup";
 
 const MainRoutes = () => {
   return (
@@ -35,6 +36,7 @@ const MainRoutes = () => {
 
       <Route path="/payment" element={<PaymentPage />} />
       <Route path="/checkout" element={<Checkoutpage />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 };
