@@ -19,10 +19,14 @@ const ReviewAndCheckout = () => {
   const [promo, setPromo] = useState("");
   const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.CartReducer.cart);
-  const total = cartItems.reduce((ac, element) => {
-    return ac + Number(element.retailprice)
-  },0)
-  const [totals, setTotals] = useState(total+25);
+  const [totals, setTotals] = useState(0);
+  useEffect(() => {
+    const total = cartItems.reduce((ac, element) => {
+      return ac + Number(element.retailprice)
+    }, 0)
+    setTotals(total)
+   },[cartItems.length])
+  
   const navigate = useNavigate();
   useEffect(() => {
     dispatch(getFromCart());
@@ -110,7 +114,7 @@ const ReviewAndCheckout = () => {
                   <Text>SUBTOTAL</Text>
                 </Box>
                 <Box>
-                  <Text>${ total}</Text>
+                  <Text>${ totals}</Text>
                 </Box>
               </Flex>
             </Box>

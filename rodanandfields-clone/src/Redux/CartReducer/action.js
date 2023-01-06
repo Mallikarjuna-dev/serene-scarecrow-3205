@@ -52,7 +52,8 @@ export const deleteFromCartFailure = () => {
 export const addToCart = (product)=>(dispatch,getState) =>{ 
     const ActionRequest = addToCartRequest(); 
     dispatch(ActionRequest);
-    axios.post("/cart", product).then(({ data}) => { 
+    return axios.post("/cart", product).then(({ data }) => { 
+        alert("product added to a cart")
         const SuccessAction = addToCartSuccess(data);
         dispatch(SuccessAction)
     })
