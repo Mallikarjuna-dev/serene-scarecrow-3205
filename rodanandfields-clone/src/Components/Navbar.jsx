@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="nav-div" >
       <ul className="ul">
         <li className="li">
-          SHOP
+        <Link to={"/productpage"}>SHOP </Link>
           <div className="mega-menu" id="first-mega">
             <div className="innerCoated">
               <div className="inner-mega-menu">
