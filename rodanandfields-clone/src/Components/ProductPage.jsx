@@ -144,7 +144,7 @@ const ProductPage = () => {
                           marginLeft: "10px",
                         }}
                       >
-                        ADD TO BAG
+                       SHOP NOW
                       </button>
                     </Link>
                   </GridItem>

@@ -67,7 +67,7 @@ export const getFromCart = ()=>(dispatch,getState) =>{
     const ActionRequest = getFromCartRequest(); 
     dispatch(ActionRequest);
     axios.get('/cart').then(({ data}) => { 
-        console.log(data)
+        console.log(data);
         const SuccessAction = getFromCartSuccess(data)
         dispatch(SuccessAction)
     })
