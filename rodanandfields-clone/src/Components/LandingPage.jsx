@@ -62,7 +62,7 @@ const LandingPage = () => {
             </Text>
           </Box>
           <Box mt={"30px"}>
-            <Link to ="/productDetails"><Button
+            <Link to ="/productpage"><Button
               padding={"12px 105px 12px 105px"}
               backgroundColor={"white"}
               border={"1px solid black"}
