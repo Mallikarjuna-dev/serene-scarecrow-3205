@@ -112,7 +112,7 @@ const Login = () => {
                             <Flex gap="5px" fontSize={"14px"}>
                             <Text>You dont have any acoount? please</Text><RouterLink to="/signup"><Text colorScheme={"blue.700"} textDecoration={"underline"}>signup</Text> </RouterLink>
                             </Flex>
-                            <Button isLoading={load} mt={"10px"} width={"100%"} colorScheme="gray" bg="black" color="white" onClick={() => {
+                            <Button _hover={{bg:"purple.800",color:"white"}} isLoading={load} mt={"10px"} width={"100%"} colorScheme="gray" bg="black" color="white" onClick={() => {
                                 console.log(load, "load")
                                 logcheck({ email, password })
                                 setemail("")

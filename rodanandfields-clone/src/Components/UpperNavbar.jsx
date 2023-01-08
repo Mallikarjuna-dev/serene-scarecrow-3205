@@ -57,6 +57,7 @@ const UpperNavbar = () => {
 
           <Icon as={BsPerson} w={"18px"} h={"18px"} margin={"2px"} />
           <Text fontSize={"14px"}>
+            
           <Login />
             </Text>
         </Box>
