@@ -9,7 +9,6 @@ import { store } from "./Redux/store";
 import axios from "axios";
 import { BrowserRouter } from "react-router-dom";
 axios.defaults.baseURL = "https://roden-and-fields-server.onrender.com";
-//https://rodanand-server.herokuapp.com
 axios.defaults.headers.post["Content-Type"] = "application/json";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
