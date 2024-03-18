@@ -4,29 +4,30 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="nav-div" >
+    <div className="nav-div">
       <ul className="ul">
         <li className="li">
-        <Link to={"/productpage"}>SHOP </Link>
+          <Link to={"/productpage"}>SHOP </Link>
           <div className="mega-menu" id="first-mega">
             <div className="innerCoated">
               <div className="inner-mega-menu">
                 <p>SHOP BY CATEGORY</p>
                 <p>
-                  <Link to={"/skincare"} >Skincare Regimens</Link>
+                  <Link to={"/skin-care-regimens"}>Skincare Regimens</Link>
                 </p>
                 <p>
-                  <Link to={"/productpage"}>Lash & Brow</Link>
+                  <Link to={"/lash-serum-and-eyebrow-tint"}>Lash & Brow</Link>
                 </p>
                 <p>
-                  <Link to={"/eyecreams"}>Eye Creams & Treatments</Link>
+                  <Link to={"/eye-creams-and-treatments"}>
+                    Eye Creams & Treatments
+                  </Link>
                 </p>
                 <p>
-                  {" "}
-                  <Link to={"#"}>Face Serums & Treatments</Link>
+                  <Link to={"/face-serums"}>Face Serums & Treatments</Link>
                 </p>
                 <p>
-                  <Link to={"#"}>Face Masks</Link>
+                  <Link to={"/beauty-face-masks"}>Face Masks</Link>
                 </p>
                 <p>
                   <Link to={"#"}>Moisturizers</Link>
@@ -94,13 +95,15 @@ const Navbar = () => {
             </div>
           </div>
         </li>
-        <li className="li"><Link to={"/best-sellers"}>BEST SELLERS </Link></li>
+        <li className="li">
+          <Link to={"/best-sellers"}>BEST SELLERS </Link>
+        </li>
         <li className="li">
           FEATURED
           <div className="mega-menu">
             <div className="inner-mega-menu" id="feature-inner">
               <p>
-                <Link to={"#"}>Special Offers</Link>
+                <Link to={"/special-offers"}>Special Offers</Link>
               </p>
               <p>
                 <Link to={"#"}>Before and Afters</Link>

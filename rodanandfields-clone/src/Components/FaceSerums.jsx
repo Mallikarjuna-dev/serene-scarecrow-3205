@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 
-const EyeCreams = () => {
+const FaceSerums = () => {
   const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
   const location = useLocation();
@@ -42,7 +42,7 @@ const EyeCreams = () => {
               letterSpacing={"1px"}
               maxWidth={"none"}
             >
-              Skincare Regimens
+              Face Serums
             </Heading>
             <Box w={"65%"}>
               <Text fontSize={"12px"} fontWeight={"450"}>
@@ -55,7 +55,7 @@ const EyeCreams = () => {
         </Box>
         <Box w={"100%"} height={"50px"} mt={"30px"} bgColor={"white"}>
           <Text fontSize={"16px"} fontWeight={"550"} ml={"10px"}>
-            Regimen
+            Face serume
           </Text>
           <Text fontSize={"13px"} fontWeight={"400"} ml={"10px"}>
             Our skincare routines are made easy with our unique Multi-Med
@@ -158,4 +158,4 @@ const EyeCreams = () => {
   );
 };
 
-export default EyeCreams;
+export default FaceSerums;

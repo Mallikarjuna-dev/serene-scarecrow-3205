@@ -9,13 +9,13 @@ import Footer from "./Footer";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 
-const EyeCreams = () => {
+const SpecialOffer = () => {
   const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
   const location = useLocation();
   useEffect(() => {
     if (location || products?.length === 0) {
-      dispatch(getProducts("eye-creams-and-treatments"));
+      dispatch(getProducts("best-sellers"));
     }
   }, [dispatch, products?.length, location]);
   return (
@@ -42,7 +42,7 @@ const EyeCreams = () => {
               letterSpacing={"1px"}
               maxWidth={"none"}
             >
-              Skincare Regimens
+              Special Offers
             </Heading>
             <Box w={"65%"}>
               <Text fontSize={"12px"} fontWeight={"450"}>
@@ -55,7 +55,7 @@ const EyeCreams = () => {
         </Box>
         <Box w={"100%"} height={"50px"} mt={"30px"} bgColor={"white"}>
           <Text fontSize={"16px"} fontWeight={"550"} ml={"10px"}>
-            Regimen
+            Special Offer
           </Text>
           <Text fontSize={"13px"} fontWeight={"400"} ml={"10px"}>
             Our skincare routines are made easy with our unique Multi-Med
@@ -80,7 +80,7 @@ const EyeCreams = () => {
                       {" "}
                       <img
                         src={item.productimage}
-                        alt="product pic"
+                        alt="not available"
                         width={"50%"}
                         style={{ margin: "auto" }}
                         height={"150px"}
@@ -158,4 +158,4 @@ const EyeCreams = () => {
   );
 };
 
-export default EyeCreams;
+export default SpecialOffer;

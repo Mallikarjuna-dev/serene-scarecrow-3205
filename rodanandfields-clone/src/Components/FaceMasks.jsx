@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 
-const EyeCreams = () => {
+const FaceMasks = () => {
   const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
   const location = useLocation();
@@ -42,7 +42,7 @@ const EyeCreams = () => {
               letterSpacing={"1px"}
               maxWidth={"none"}
             >
-              Skincare Regimens
+              Face Masks and Beauty Care
             </Heading>
             <Box w={"65%"}>
               <Text fontSize={"12px"} fontWeight={"450"}>
@@ -158,4 +158,4 @@ const EyeCreams = () => {
   );
 };
 
-export default EyeCreams;
+export default FaceMasks;

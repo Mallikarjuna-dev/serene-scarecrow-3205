@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import UpperNavbar from "./UpperNavbar";
 import Navbar from "./Navbar";
 
-const EyeCreams = () => {
+const LashBrow = () => {
   const products = useSelector((state) => state.AppReducer.products);
   const dispatch = useDispatch();
   const location = useLocation();
@@ -158,4 +158,4 @@ const EyeCreams = () => {
   );
 };
 
-export default EyeCreams;
+export default LashBrow;

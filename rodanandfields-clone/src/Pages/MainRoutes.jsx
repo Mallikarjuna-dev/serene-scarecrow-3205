@@ -17,6 +17,10 @@ import BestSeller from "../Components/BestSeller";
 import EyeCreams from "../Components/EyeCreams";
 import SkinCare from "../Components/SkinCare";
 import Signup from "../Components/LoginSignup/Signup";
+import LashBrow from "../Components/LashBrow";
+import FaceSerums from "../Components/FaceSerums";
+import FaceMasks from "../Components/FaceMasks";
+import SpecialOffer from "../Components/SpecialOffer";
 
 const MainRoutes = () => {
   return (
@@ -24,16 +28,18 @@ const MainRoutes = () => {
       <Route path="/" element={<LandingPage />} />
       <Route path="/pc-perks" element={<Perksprogram />} />
       <Route path="/become-a-consultant" element={<Consultant />} />
-
       <Route path="/cart" element={<Cart />} />
       <Route path="/bagreview" element={<ReviewAndCheckout />} />
       <Route path="/best-sellers" element={<BestSeller />} />
-      <Route path="/eyecreams" element={<EyeCreams />} />
-      <Route path="/skincare" element={<SkinCare />} />
+      <Route path="/special-offers" element={<SpecialOffer />} />
 
+      <Route path="/skin-care-regimens" element={<SkinCare />} />
+      <Route path="/lash-serum-and-eyebrow-tint" element={<LashBrow />} />
+      <Route path="/eye-creams-and-treatments" element={<EyeCreams />} />
+      <Route path="/face-serums" element={<FaceSerums />} />
+      <Route path="/beauty-face-masks" element={<FaceMasks />} />
       <Route path="/productpage/:id" element={<ProductDetails />} />
       <Route path="/productpage" element={<ProductPage />} />
-
       <Route path="/payment" element={<PaymentPage />} />
       <Route path="/checkout" element={<Checkoutpage />} />
       <Route path="/signup" element={<Signup />} />
